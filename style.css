@@ -1346,3 +1346,24 @@ animation-duration: 0.01ms !important;
 animation-iteration-count: 1 !important;
 }
 }
+/* =========================================
+DOWNLOAD CV BUTTON
+========================================= */
+
+.download-button {
+background-color: #0284c7;
+color: #ffffff;
+padding: 13px 25px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+display: inline-block;
+transition:
+transform 0.25s ease,
+background-color 0.25s ease;
+}
+
+.download-button:hover {
+background-color: #0369a1;
+transform: translateY(-2px);
+}
