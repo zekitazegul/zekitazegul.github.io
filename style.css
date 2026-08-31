@@ -1,6 +1,6 @@
 /* =========================================
 ZEKI TAZEGUL - CV WEBSITE
-Main Stylesheet
+Premium Responsive Stylesheet
 ========================================= */
 
 * {
@@ -18,7 +18,8 @@ body {
 font-family: Arial, Helvetica, sans-serif;
 line-height: 1.6;
 color: #1f2937;
-background-color: #f8fafc;
+background-color: #f1f5f9;
+-webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -40,7 +41,7 @@ color: #ffffff;
 position: sticky;
 top: 0;
 z-index: 1000;
-box-shadow: 0 2px 15px rgba(15, 23, 42, 0.12);
+box-shadow: 0 4px 20px rgba(15, 23, 42, 0.16);
 }
 
 nav {
@@ -60,6 +61,7 @@ font-size: 1.3rem;
 font-weight: 700;
 letter-spacing: 0.5px;
 white-space: nowrap;
+transition: color 0.25s ease;
 }
 
 .logo:hover {
@@ -116,7 +118,8 @@ background-color: #ffffff;
 border-radius: 2px;
 transition:
 transform 0.25s ease,
-opacity 0.25s ease;
+opacity 0.25s ease,
+background-color 0.25s ease;
 }
 
 .mobile-menu-toggle:hover span {
@@ -165,10 +168,11 @@ main {
 max-width: 1100px;
 margin: 0 auto;
 background-color: #ffffff;
+box-shadow: 0 0 45px rgba(15, 23, 42, 0.04);
 }
 
 section {
-padding: 85px 25px;
+padding: 90px 25px;
 }
 
 .section-inner {
@@ -206,11 +210,13 @@ HERO
 ========================================= */
 
 #hero {
-min-height: 570px;
+min-height: 590px;
 display: flex;
 align-items: center;
-padding: 85px 25px;
-background-color: #f8fafc;
+padding: 90px 25px;
+background:
+radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.08), transparent 30%),
+#f8fafc;
 }
 
 .hero-content {
@@ -272,25 +278,28 @@ flex-wrap: wrap;
 
 #hero a {
 display: inline-block;
-border-radius: 6px;
+border-radius: 7px;
 text-decoration: none;
 font-weight: 600;
 transition:
 transform 0.25s ease,
 background-color 0.25s ease,
 color 0.25s ease,
-border-color 0.25s ease;
+border-color 0.25s ease,
+box-shadow 0.25s ease;
 }
 
 .primary-button {
 background-color: #0f172a;
 color: #ffffff;
 padding: 13px 25px;
+box-shadow: 0 5px 15px rgba(15, 23, 42, 0.14);
 }
 
 .primary-button:hover {
 background-color: #1e293b;
 transform: translateY(-2px);
+box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
 }
 
 .secondary-button {
@@ -310,10 +319,10 @@ HERO CARD
 ========================================= */
 
 .hero-card {
-background-color: #ffffff;
-border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.96);
+border-radius: 12px;
 padding: 10px;
-box-shadow: 0 15px 40px rgba(15, 23, 42, 0.09);
+box-shadow: 0 18px 45px rgba(15, 23, 42, 0.11);
 border: 1px solid #e2e8f0;
 }
 
@@ -336,7 +345,7 @@ align-items: center;
 justify-content: center;
 width: 35px;
 height: 35px;
-border-radius: 6px;
+border-radius: 7px;
 background-color: #e0f2fe;
 color: #0284c7;
 font-size: 0.7rem;
@@ -396,8 +405,9 @@ gap: 24px;
 position: relative;
 background-color: #ffffff;
 padding: 30px;
-border-radius: 9px;
-box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+border-radius: 10px;
+box-shadow: 0 6px 22px rgba(15, 23, 42, 0.055);
+border: 1px solid #e2e8f0;
 border-top: 3px solid #38bdf8;
 transition:
 transform 0.25s ease,
@@ -406,7 +416,7 @@ box-shadow 0.25s ease;
 
 .skill-card:hover {
 transform: translateY(-4px);
-box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
 }
 
 .skill-card-number {
@@ -469,23 +479,6 @@ margin: 0;
 }
 
 /* =========================================
-MOBILE - PERSONAL COMPETENCIES
-========================================= */
-
-@media (max-width: 480px) {
-
-.competencies-content {
-max-width: 100%;
-}
-
-.competencies-text {
-font-size: 0.98rem;
-line-height: 1.7;
-}
-
-}
-
-/* =========================================
 EXPERIENCE
 ========================================= */
 
@@ -503,8 +496,11 @@ background-color: #ffffff;
 padding: 32px 32px 32px 48px;
 margin-bottom: 28px;
 border-left: 4px solid #38bdf8;
-border-radius: 7px;
-box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+border-radius: 8px;
+box-shadow: 0 6px 22px rgba(15, 23, 42, 0.055);
+border-top: 1px solid #e2e8f0;
+border-right: 1px solid #e2e8f0;
+border-bottom: 1px solid #e2e8f0;
 }
 
 .experience-card:last-child {
@@ -601,9 +597,9 @@ gap: 22px;
 position: relative;
 padding: 28px 28px 28px 78px;
 border: 1px solid #e2e8f0;
-border-radius: 8px;
+border-radius: 9px;
 background-color: #ffffff;
-box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
 transition:
 transform 0.25s ease,
 box-shadow 0.25s ease;
@@ -611,7 +607,7 @@ box-shadow 0.25s ease;
 
 .education-card:hover {
 transform: translateY(-3px);
-box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .education-number {
@@ -655,8 +651,8 @@ position: relative;
 background-color: #ffffff;
 padding: 28px 28px 28px 78px;
 border: 1px solid #e2e8f0;
-border-radius: 8px;
-box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+border-radius: 9px;
+box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
 transition:
 transform 0.25s ease,
 box-shadow 0.25s ease;
@@ -664,7 +660,7 @@ box-shadow 0.25s ease;
 
 .course-card:hover {
 transform: translateY(-3px);
-box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .course-number {
@@ -710,7 +706,7 @@ padding: 25px;
 background-color: #ffffff;
 border-left: 3px solid #38bdf8;
 border-radius: 7px;
-box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
 }
 
 .continuous-learning h3 {
@@ -736,8 +732,9 @@ background-color: #f8fafc;
 max-width: 700px;
 background-color: #ffffff;
 border: 1px solid #e2e8f0;
-border-radius: 8px;
+border-radius: 9px;
 padding: 0 25px;
+box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
 }
 
 .language-item {
@@ -814,9 +811,9 @@ min-height: 130px;
 padding: 25px;
 background-color: #ffffff;
 border: 1px solid #e2e8f0;
-border-radius: 8px;
+border-radius: 9px;
 text-decoration: none;
-box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+box-shadow: 0 5px 18px rgba(15, 23, 42, 0.045);
 transition:
 transform 0.25s ease,
 box-shadow 0.25s ease,
@@ -826,7 +823,7 @@ border-color 0.25s ease;
 .contact-card:hover {
 transform: translateY(-3px);
 border-color: #bae6fd;
-box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .contact-label {
@@ -910,7 +907,6 @@ padding: 28px;
 .contact-grid {
 grid-template-columns: 1fr;
 }
-
 }
 
 /* =========================================
@@ -957,7 +953,7 @@ background-color: #0f172a;
 flex-direction: column;
 align-items: stretch;
 gap: 18px;
-box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
+box-shadow: 0 10px 25px rgba(15, 23, 42, 0.20);
 }
 
 .nav-right.menu-open ul {
@@ -976,7 +972,7 @@ width: 100%;
 .nav-right.menu-open ul a {
 display: block;
 width: 100%;
-padding: 11px 5px;
+padding: 12px 5px;
 font-size: 0.95rem;
 border-bottom: 1px solid rgba(148, 163, 184, 0.18);
 }
@@ -1013,7 +1009,7 @@ transform: translateY(-7px) rotate(-45deg);
 }
 
 section {
-padding: 65px 20px;
+padding: 70px 20px;
 }
 
 section > .section-inner > h2 {
@@ -1025,12 +1021,12 @@ margin-bottom: 30px;
 
 #hero {
 min-height: auto;
-padding: 65px 20px 70px;
+padding: 70px 20px 75px;
 }
 
 .hero-content {
 grid-template-columns: 1fr;
-gap: 38px;
+gap: 40px;
 }
 
 #hero h1 {
@@ -1049,6 +1045,7 @@ font-size: 1rem;
 
 .hero-card {
 max-width: 600px;
+width: 100%;
 }
 
 /* Experience */
@@ -1083,7 +1080,6 @@ grid-template-columns: 1fr;
 .contact-grid {
 grid-template-columns: 1fr;
 }
-
 }
 
 /* =========================================
@@ -1093,12 +1089,12 @@ RESPONSIVE DESIGN - SMALL MOBILE
 @media (max-width: 480px) {
 
 nav {
-padding: 13px 15px;
+padding: 12px 15px;
 min-height: 58px;
 }
 
 .logo {
-font-size: 1.1rem;
+font-size: 1.05rem;
 }
 
 .mobile-menu-toggle {
@@ -1116,26 +1112,34 @@ padding-right: 15px;
 }
 
 section {
-padding: 55px 18px;
+padding: 58px 18px;
 }
 
 section > .section-inner > h2 {
 font-size: 1.65rem;
+margin-bottom: 27px;
+}
+
+.section-eyebrow {
+font-size: 0.7rem;
+letter-spacing: 2px;
 }
 
 /* Hero */
 
 #hero {
-padding: 55px 18px 60px;
+padding: 58px 18px 65px;
 }
 
 #hero h1 {
 font-size: 2.35rem;
+line-height: 1.08;
 letter-spacing: -0.8px;
 }
 
 #hero h2 {
-font-size: 1.35rem;
+font-size: 1.3rem;
+line-height: 1.4;
 font-weight: 800;
 }
 
@@ -1145,6 +1149,7 @@ font-size: 0.95rem;
 
 .hero-description {
 font-size: 0.95rem;
+line-height: 1.7;
 }
 
 .hero-buttons {
@@ -1157,20 +1162,71 @@ width: 100%;
 text-align: center;
 }
 
+.hero-card {
+border-radius: 10px;
+padding: 7px;
+}
+
 .hero-card-item {
-padding: 16px 11px;
+padding: 16px 10px;
+gap: 12px;
+}
+
+.hero-card-icon {
+width: 33px;
+height: 33px;
+}
+
+/* Profile */
+
+#profile p:not(.section-eyebrow) {
+font-size: 0.98rem;
+line-height: 1.7;
 }
 
 /* Skills */
 
 .skill-card {
 padding: 23px;
+border-radius: 9px;
+}
+
+.skill-card-number {
+font-size: 2.1rem;
+}
+
+.skill-card h3 {
+font-size: 1.12rem;
+}
+
+.skill-card li {
+font-size: 0.92rem;
+}
+
+/* Competencies */
+
+.competencies-content {
+max-width: 100%;
+}
+
+.competencies-text {
+font-size: 0.97rem;
+line-height: 1.7;
 }
 
 /* Experience */
 
 .experience-card {
 padding: 24px 17px 24px 27px;
+border-radius: 8px;
+}
+
+.experience-card h3 {
+font-size: 1.15rem;
+}
+
+.experience-card li {
+font-size: 0.94rem;
 }
 
 .timeline-marker {
@@ -1185,6 +1241,7 @@ font-size: 0.6rem;
 
 .education-card {
 padding: 25px 20px 25px 62px;
+border-radius: 8px;
 }
 
 .education-number {
@@ -1192,10 +1249,15 @@ left: 20px;
 top: 25px;
 }
 
+.education-card h3 {
+font-size: 1.05rem;
+}
+
 /* Courses */
 
 .course-card {
 padding: 25px 20px 25px 62px;
+border-radius: 8px;
 }
 
 .course-number {
@@ -1203,15 +1265,84 @@ left: 20px;
 top: 25px;
 }
 
+.course-card h3 {
+font-size: 1.05rem;
+}
+
 /* Languages */
 
 .language-list {
 padding: 0 18px;
+border-radius: 8px;
+}
+
+.language-item {
+padding: 16px 0;
+}
+
+/* Other */
+
+.other-list {
+padding-left: 20px;
+}
+
+.other-list li {
+font-size: 0.94rem;
 }
 
 /* Contact */
 
 .contact-card {
+min-height: 115px;
 padding: 22px;
+border-radius: 8px;
+}
+}
+
+/* =========================================
+VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 360px) {
+
+.logo {
+font-size: 1rem;
+}
+
+#hero h1 {
+font-size: 2.1rem;
+}
+
+#hero h2 {
+font-size: 1.2rem;
+}
+
+section {
+padding-left: 16px;
+padding-right: 16px;
+}
+
+#hero {
+padding-left: 16px;
+padding-right: 16px;
+}
+}
+
+/* =========================================
+REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+html {
+scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+transition-duration: 0.01ms !important;
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
 }
 }
