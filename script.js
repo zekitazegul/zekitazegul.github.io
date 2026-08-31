@@ -9,24 +9,41 @@ const translations = {
            NAVIGATION
            ========================================= */
 
-        navProfile: "Profile",
-        navSkills: "Skills",
-        navCompetencies: "Strengths",
-        navCourses: "Courses",
-        navOther: "Additional Information",
-        navExperience: "Experience",
-        navEducation: "Education",
-        navLanguages: "Languages",
-        navContact: "Contact",
+        navProfile:
+            "Profile",
+
+        navSkills:
+            "Skills",
+
+        navCompetencies:
+            "Strengths",
+
+        navCourses:
+            "Courses",
+
+        navOther:
+            "Additional Information",
+
+        navExperience:
+            "Experience",
+
+        navEducation:
+            "Education",
+
+        navLanguages:
+            "Languages",
+
+        navContact:
+            "Contact",
 
 
         /* =========================================
            HERO
            ========================================= */
 
-        heroLabel: "IT SUPPORT PROFESSIONAL",
+        heroLabel:
+            "IT PROFESSIONAL",
 
-        
         heroLocation:
             "Poortugaal – Rotterdam, Netherlands",
 
@@ -101,10 +118,10 @@ const translations = {
             "Profile",
 
         profileText1:
-            "Enthusiastic and service-oriented ICT professional with practical experience in desktop support, workplace management, hardware and software support, and technical troubleshooting.",
+            "Enthusiastic and service-oriented IT professional with practical experience in desktop support, workplace management, hardware and software support, and technical troubleshooting.",
 
         profileText2:
-            "Experienced in installing, configuring, maintaining and repairing laptops and workstations, as well as supporting end users with daily ICT problems.",
+            "Experienced in installing, configuring, maintaining and repairing laptops and workstations, as well as supporting end users with daily IT problems.",
 
         profileText3:
             "I am used to analysing technical problems independently, supporting users directly and explaining solutions clearly. I work accurately, solution-oriented and independently and feel comfortable in an onsite environment with direct end-user contact.",
@@ -220,10 +237,10 @@ const translations = {
             "ICT Administrator",
 
         experience1Bullet1:
-            "Responsible for daily ICT management and user support within the school environment.",
+            "Responsible for daily IT management and user support within the school environment.",
 
         experience1Bullet2:
-            "Installing, configuring and maintaining laptops, workstations and other ICT equipment.",
+            "Installing, configuring and maintaining laptops, workstations and other IT equipment.",
 
         experience1Bullet3:
             "Preparing devices for teachers, administration and students.",
@@ -232,7 +249,7 @@ const translations = {
             "Resolving hardware and software issues and performing technical troubleshooting.",
 
         experience1Bullet5:
-            "Supporting end users with daily ICT, workplace and software problems.",
+            "Supporting end users with daily IT, workplace and software problems.",
 
         experience1Bullet6:
             "Performing system updates, maintenance and hardware upgrades.",
@@ -247,14 +264,14 @@ const translations = {
             "Guiding users in the use of hardware, software and digital systems.",
 
         experience1Bullet10:
-            "Identifying recurring ICT problems and contributing to practical improvements.",
+            "Identifying recurring IT problems and contributing to practical improvements.",
 
 
         experience2Title:
             "Software Tester",
 
         experience2Bullet1:
-            "Completed an ICT traineeship with practical experience as a software tester in a professional IT environment.",
+            "Completed an IT traineeship with practical experience as a software tester in a professional IT environment.",
 
         experience2Bullet2:
             "Performed functional and technical testing within a software development project.",
@@ -320,7 +337,7 @@ const translations = {
             "ICT Teacher",
 
         experience4Bullet1:
-            "Delivered lessons in digital skills and basic ICT.",
+            "Delivered lessons in digital skills and basic IT.",
 
         experience4Bullet2:
             "Supported students and colleagues in using computers and digital tools.",
@@ -342,10 +359,6 @@ const translations = {
 
 
         /* =========================================
-           VOLUNTEER / HARDWARE
-           ========================================= */
-
-        /* =========================================
            EDUCATION
            ========================================= */
 
@@ -353,7 +366,7 @@ const translations = {
             "Education",
 
         education1:
-            "IT Traineeship – completed. ICT bootcamp and practical internship successfully completed in a professional IT environment.",
+            "IT Traineeship – completed. IT bootcamp and practical internship successfully completed in a professional IT environment.",
 
         education2:
             "Associate Degree – Computer Science",
@@ -486,7 +499,7 @@ const translations = {
            ========================================= */
 
         heroLabel:
-            "ICT-SUPPORT PROFESSIONAL",
+            "IT PROFESSIONAL",
 
         heroLocation:
             "Poortugaal – Rotterdam, Nederland",
@@ -562,10 +575,10 @@ const translations = {
             "Profiel",
 
         profileText1:
-            "Enthousiaste en servicegerichte ICT-professional met praktische ervaring in desktop support, werkplekbeheer, hardware- en softwareondersteuning en technische troubleshooting.",
+            "Enthousiaste en servicegerichte IT-professional met praktische ervaring in desktop support, werkplekbeheer, hardware- en softwareondersteuning en technische troubleshooting.",
 
         profileText2:
-            "Ervaring met het installeren, configureren, onderhouden en repareren van laptops en werkstations en met het ondersteunen van eindgebruikers bij dagelijkse ICT-problemen.",
+            "Ervaring met het installeren, configureren, onderhouden en repareren van laptops en werkstations en met het ondersteunen van eindgebruikers bij dagelijkse IT-problemen.",
 
         profileText3:
             "Ik ben gewend om technische problemen zelfstandig te analyseren, gebruikers persoonlijk te ondersteunen en oplossingen duidelijk uit te leggen. Ik werk nauwkeurig, oplossingsgericht en zelfstandig en voel mij comfortabel in een onsite omgeving met direct end-user contact.",
@@ -667,7 +680,7 @@ const translations = {
             "Persoonlijke Competenties",
 
         competenciesText:
-            "Servicegerichte en klantgerichte IT-professional met een praktische en oplossingsgerichte instelling. Ik werk zelfstandig en neem verantwoordelijkheid voor mijn taken, terwijl ik ook effectief en prettig samenwerk binnen een team. Ik sta open voor veranderingen en kan mij snel aanpassen aan nieuwe technologieën, systemen, processen en werkomgevingen. Ik blijf professioneel en rustig onder druk en beschik over sterke communicatieve vaardigheden, oog voor detail en een sterke motivatie om mij voortdurend te blijven ontwikkelen." ,
+            "Servicegerichte en klantgerichte IT-professional met een praktische en oplossingsgerichte instelling. Ik werk zelfstandig en neem verantwoordelijkheid voor mijn taken, terwijl ik ook effectief en prettig samenwerk binnen een team. Ik sta open voor veranderingen en kan mij snel aanpassen aan nieuwe technologieën, systemen, processen en werkomgevingen. Ik blijf professioneel en rustig onder druk en beschik over sterke communicatieve vaardigheden, oog voor detail en een sterke motivatie om mij voortdurend te blijven ontwikkelen.",
 
 
         /* =========================================
@@ -681,10 +694,10 @@ const translations = {
             "ICT-beheerder",
 
         experience1Bullet1:
-            "Verantwoordelijk voor het dagelijkse ICT-beheer en de ondersteuning van gebruikers binnen de schoolomgeving.",
+            "Verantwoordelijk voor het dagelijkse IT-beheer en de ondersteuning van gebruikers binnen de schoolomgeving.",
 
         experience1Bullet2:
-            "Installeren, configureren en onderhouden van laptops, werkstations en andere ICT-apparatuur.",
+            "Installeren, configureren en onderhouden van laptops, werkstations en andere IT-apparatuur.",
 
         experience1Bullet3:
             "Voorbereiden van devices voor gebruik door leerkrachten, administratie en leerlingen.",
@@ -693,7 +706,7 @@ const translations = {
             "Oplossen van hardware- en softwarestoringen en uitvoeren van technische troubleshooting.",
 
         experience1Bullet5:
-            "Ondersteunen van eindgebruikers bij dagelijkse ICT-, werkplek- en softwareproblemen.",
+            "Ondersteunen van eindgebruikers bij dagelijkse IT-, werkplek- en softwareproblemen.",
 
         experience1Bullet6:
             "Uitvoeren van systeemupdates, onderhoud en hardware-upgrades.",
@@ -708,14 +721,14 @@ const translations = {
             "Gebruikers begeleiden bij het gebruik van hardware, software en digitale systemen.",
 
         experience1Bullet10:
-            "Signaleren van terugkerende ICT-problemen en bijdragen aan praktische verbeteringen van de digitale werkplek.",
+            "Signaleren van terugkerende IT-problemen en bijdragen aan praktische verbeteringen van de digitale werkplek.",
 
 
         experience2Title:
             "Software Tester",
 
         experience2Bullet1:
-            "Afgerond ICT-traineeship met praktijkervaring als softwaretester in een professionele IT-omgeving.",
+            "Afgerond IT-traineeship met praktijkervaring als softwaretester in een professionele IT-omgeving.",
 
         experience2Bullet2:
             "Uitvoeren van functionele en technische tests binnen een softwareontwikkelingsproject.",
@@ -781,7 +794,7 @@ const translations = {
             "ICT-docent",
 
         experience4Bullet1:
-            "Lessen verzorgd in digitale vaardigheden en basis-ICT.",
+            "Lessen verzorgd in digitale vaardigheden en basis-IT.",
 
         experience4Bullet2:
             "Leerlingen en collega's ondersteund bij het gebruik van computers en digitale middelen.",
@@ -810,7 +823,7 @@ const translations = {
             "Opleiding",
 
         education1:
-            "IT Traineeship – afgerond. ICT-bootcamp en praktijkstage succesvol afgerond binnen een professionele IT-omgeving.",
+            "IT Traineeship – afgerond. IT-bootcamp en praktijkstage succesvol afgerond binnen een professionele IT-omgeving.",
 
         education2:
             "Associate Degree – Computer Science",
@@ -920,7 +933,8 @@ function setLanguage(language) {
     }
 
 
-    document.documentElement.lang = language;
+    document.documentElement.lang =
+        language;
 
 
     /* -----------------------------------------
@@ -931,7 +945,8 @@ function setLanguage(language) {
         .querySelectorAll("[data-i18n]")
         .forEach((element) => {
 
-            const key = element.dataset.i18n;
+            const key =
+                element.dataset.i18n;
 
             if (
                 Object.prototype.hasOwnProperty.call(
@@ -939,8 +954,10 @@ function setLanguage(language) {
                     key
                 )
             ) {
+
                 element.textContent =
                     selectedTranslations[key];
+
             }
 
         });
@@ -949,15 +966,6 @@ function setLanguage(language) {
     /* -----------------------------------------
        Translate section eyebrows
        ----------------------------------------- */
-
-    const eyebrowTranslations = {
-
-        ".section-eyebrow":
-
-            null
-
-    };
-
 
     const sectionEyebrows = {
 
@@ -995,7 +1003,10 @@ function setLanguage(language) {
                 document.querySelector(selector);
 
             if (element && text) {
-                element.textContent = text;
+
+                element.textContent =
+                    text;
+
             }
 
         });
@@ -1037,7 +1048,7 @@ function setLanguage(language) {
        ----------------------------------------- */
 
     document.title =
-        "Zeki Tazegul | Desktop Support / ICT Support Engineer";
+        "Zeki Tazegul | IT Professional";
 
 
     /* -----------------------------------------
@@ -1088,7 +1099,9 @@ if (dutchButton) {
    ========================================= */
 
 const savedLanguage =
-    localStorage.getItem("preferredLanguage");
+    localStorage.getItem(
+        "preferredLanguage"
+    );
 
 
 if (
