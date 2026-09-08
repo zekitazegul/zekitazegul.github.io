@@ -1,1234 +1,1341 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <meta
+        name="description"
+        content="Zeki Tazegul - IT Professional | QA Engineer | IT Support Technician | System Administrator"
+    >
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
+    <title>Zeki Tazegul | IT Professional</title>
 
->
-
-<meta
-name="description"
-content="Zeki Tazegul - IT Professional | QA Engineer | IT Support Technician | System Administrator"
-
->
-
-<title>
-    Zeki Tazegul | IT Professional
-</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+    <nav aria-label="Main navigation">
 
-<nav>
+        <a href="#hero" class="logo">Zeki Tazegul</a>
 
-<a href="#hero" class="logo">
-    Zeki Tazegul
-</a>
+        <!-- Language switcher is outside the mobile menu -->
+        <div class="language-switcher" aria-label="Language selection">
+            <button
+                type="button"
+                class="language-button active"
+                id="language-en"
+                data-language="en"
+            >
+                EN
+            </button>
 
-<button
-class="mobile-menu-toggle"
-id="mobile-menu-toggle"
-type="button"
-aria-label="Open navigation menu"
-aria-expanded="false"
-aria-controls="mobile-navigation"
+            <span>/</span>
 
->
+            <button
+                type="button"
+                class="language-button"
+                id="language-nl"
+                data-language="nl"
+            >
+                NL
+            </button>
+        </div>
 
-<span></span> <span></span> <span></span>
+        <button
+            class="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-</button>
+        <div class="nav-right" id="mobile-navigation">
 
-<div class="nav-right" id="mobile-navigation">
+            <ul>
+                <li>
+                    <a href="#profile" data-i18n="navProfile">Profile</a>
+                </li>
 
-<ul>
+                <li>
+                    <a href="#skills" data-i18n="navSkills">Skills</a>
+                </li>
 
-<li>
-    <a href="#profile" data-i18n="navProfile">
-        Profile
-    </a>
-</li>
+                <li>
+                    <a href="#competencies" data-i18n="navCompetencies">Strengths</a>
+                </li>
 
-<li>
-    <a href="#skills" data-i18n="navSkills">
-        Skills
-    </a>
-</li>
+                <li>
+                    <a href="#experience" data-i18n="navExperience">Experience</a>
+                </li>
 
-<li>
-    <a href="#competencies" data-i18n="navCompetencies">
-        Strengths
-    </a>
-</li>
+                <li>
+                    <a href="#education" data-i18n="navEducation">Education</a>
+                </li>
 
-<li>
-    <a href="#experience" data-i18n="navExperience">
-        Experience
-    </a>
-</li>
+                <li>
+                    <a href="#languages" data-i18n="navLanguages">Languages</a>
+                </li>
 
-<li>
-    <a href="#education" data-i18n="navEducation">
-        Education
-    </a>
-</li>
+                <li>
+                    <a href="#other" data-i18n="navOther">Hobbies</a>
+                </li>
 
-<li>
-    <a href="#languages" data-i18n="navLanguages">
-        Languages
-    </a>
-</li>
+                <li>
+                    <a href="#contact" data-i18n="navContact">Contact</a>
+                </li>
+            </ul>
 
-<li>
-    <a href="#contact" data-i18n="navContact">
-        Contact
-    </a>
-</li>
+        </div>
 
-</ul>
-
-<div class="language-switcher">
-
-<button
-id="language-en"
-class="language-button active"
-type="button"
-
->
-
-EN
-
-</button>
-
-<span>|</span>
-
-<button
-id="language-nl"
-class="language-button"
-type="button"
-
->
-
-
-NL
-
-
-</button>
-
-</div>
-
-</div>
-
-</nav>
-
+    </nav>
 </header>
+
 
 <main>
 
-<!-- =====================================
-     HERO
-     ===================================== -->
+    <!-- =========================================
+         HERO
+    ========================================== -->
 
-<section id="hero">
+    <section id="hero">
 
-<div class="hero-content">
+        <div class="section-inner hero-content">
 
-<div class="hero-main">
+            <div class="hero-main">
 
-<p
-class="hero-label"
-data-i18n="heroLabel"
->
-    IT PROFESSIONAL
-</p>
+                <p class="hero-label" data-i18n="heroLabel">
+                    IT PROFESSIONAL
+                </p>
 
-<h1>
-    Zeki Tazegul
-</h1>
+                <h1>Zeki Tazegul</h1>
 
-<p class="hero-subtitle">
-    QA Engineer | IT Support Technician | System Administrator
-</p>
+                <h2 class="hero-subtitle" data-i18n="heroSubtitle">
+                    QA Engineer | IT Support Technician | System Administrator
+                </h2>
 
-<p class="hero-contact">
-    +31 6 44955335
-</p>
+                <p class="hero-location">
+                    Poortugaal – Rotterdam, Netherlands
+                </p>
 
-<p class="hero-contact">
-    zekitazegul@gmail.com
-</p>
+                <p class="hero-description" data-i18n="heroDescription">
+                    IT professional with a strong combination of hands-on IT support,
+                    system administration, software testing and educational experience.
+                    Experienced in troubleshooting, device management, Microsoft 365,
+                    Windows environments, networking and modern QA practices.
+                </p>
 
-<p
-class="hero-location"
-data-i18n="heroLocation"
->
-    Poortugaal – Rotterdam
-</p>
+                <div class="hero-buttons">
 
-<p
-class="hero-description"
-data-i18n="heroDescription"
->
-    Hands-on IT professional with practical experience
-    in desktop support, workplace management, hardware,
-    software troubleshooting and end-user support.
-</p>
+                    <a
+                        href="#contact"
+                        class="primary-button"
+                        data-i18n="contactButton"
+                    >
+                        Contact Me
+                    </a>
 
-<div class="hero-buttons">
+                    <a
+                        href="#experience"
+                        class="secondary-button"
+                        data-i18n="experienceButton"
+                    >
+                        View Experience
+                    </a>
 
-<a
-href="#contact"
-class="primary-button"
-data-i18n="contactButton"
+                    <a
+                        href="cv/Zeki_Tazegul_CV_NL.pdf"
+                        class="download-button"
+                        download
+                        data-i18n="downloadButton"
+                    >
+                        Download CV
+                    </a>
 
->
+                </div>
 
-Contact Me
+            </div>
 
-</a>
 
-<a
-href="#experience"
-class="secondary-button"
-data-i18n="experienceButton"
+            <div class="hero-card">
 
->
-View Experience
+                <div class="hero-card-item">
 
-</a>
+                    <div class="hero-card-icon">
+                        IT
+                    </div>
 
-<a
-href="cv/Zeki_Tazegul_CV.pdf"
-class="download-button"
-download
->
-Download CV
-</a>
+                    <div>
+                        <strong data-i18n="heroCard1Title">
+                            Desktop Support
+                        </strong>
 
-</div>
+                        <p data-i18n="heroCard1Text">
+                            End-user support, troubleshooting and device management
+                        </p>
+                    </div>
 
-</div>
+                </div>
 
-<div class="hero-card">
 
-<div class="hero-card-item">
+                <div class="hero-card-item">
 
-<span class="hero-card-icon">
-    01
-</span>
+                    <div class="hero-card-icon">
+                        HW
+                    </div>
 
-<div>
+                    <div>
+                        <strong data-i18n="heroCard2Title">
+                            Hardware &amp; Devices
+                        </strong>
 
-<strong data-i18n="heroCard1Title">
-    Desktop Support
-</strong>
+                        <p data-i18n="heroCard2Text">
+                            Hardware repair, upgrades, preparation and deployment
+                        </p>
+                    </div>
 
-<p data-i18n="heroCard1Text">
-    End-user & workplace support
-</p>
+                </div>
 
-</div>
 
-</div>
+                <div class="hero-card-item">
 
-<div class="hero-card-item">
+                    <div class="hero-card-icon">
+                        TS
+                    </div>
 
-<span class="hero-card-icon">
-    02
-</span>
+                    <div>
+                        <strong data-i18n="heroCard3Title">
+                            Troubleshooting
+                        </strong>
 
-<div>
+                        <p data-i18n="heroCard3Text">
+                            System, software, network and user support
+                        </p>
+                    </div>
 
-<strong data-i18n="heroCard2Title">
-    Hardware & Devices
-</strong>
+                </div>
 
-<p data-i18n="heroCard2Text">
-    Installation, repair & maintenance
-</p>
 
-</div>
+                <div class="hero-card-item">
 
-</div>
+                    <div class="hero-card-icon">
+                        QA
+                    </div>
 
-<div class="hero-card-item">
+                    <div>
+                        <strong data-i18n="heroCard4Title">
+                            IT &amp; Software
+                        </strong>
 
-<span class="hero-card-icon">
-    03
-</span>
+                        <p data-i18n="heroCard4Text">
+                            QA testing, automation, scripting and technical problem solving
+                        </p>
+                    </div>
 
-<div>
+                </div>
 
-<strong data-i18n="heroCard3Title">
-    Troubleshooting
-</strong>
+            </div>
 
-<p data-i18n="heroCard3Text">
-    Technical analysis & problem solving
-</p>
+        </div>
 
-</div>
+    </section>
 
-</div>
 
-<div class="hero-card-item">
+    <!-- =========================================
+         PROFILE
+    ========================================== -->
 
-<span class="hero-card-icon">
-    04
-</span>
+    <section id="profile">
 
-<div>
+        <div class="section-inner">
 
-<strong data-i18n="heroCard4Title">
-    IT & Software
-</strong>
+            <p class="section-eyebrow" data-i18n="profileEyebrow">
+                PROFESSIONAL PROFILE
+            </p>
 
-<p data-i18n="heroCard4Text">
-    Windows, Microsoft 365 & IT tools
-</p>
+            <h2 data-i18n="profileTitle">
+                Profile
+            </h2>
 
-</div>
+            <div class="profile-content">
 
-</div>
+                <p data-i18n="profileText1">
+                    I am an IT professional with a multidisciplinary background
+                    combining IT support, system administration, software testing
+                    and education.
+                </p>
 
-</div>
+                <p data-i18n="profileText2">
+                    My practical experience includes desktop and end-user support,
+                    Windows environments, hardware and software troubleshooting,
+                    Microsoft 365, device preparation, networking and school ICT
+                    administration.
+                </p>
 
-</div>
+                <p data-i18n="profileText3">
+                    During my IT traineeship at Motopp, I developed hands-on
+                    experience in software testing, API testing, test automation,
+                    Playwright, Postman, k6, Git and GitHub Actions.
+                </p>
 
-</section>
+                <p data-i18n="profileText4">
+                    My previous career in education also strengthened my
+                    communication, problem-solving, leadership and organisational
+                    skills. I am particularly interested in roles where I can
+                    combine technical expertise with practical support and
+                    continuous learning.
+                </p>
 
-<!-- =====================================
-     PROFILE
-     ===================================== -->
+            </div>
 
-<section id="profile">
+        </div>
 
-<div class="section-inner">
+    </section>
 
-<p class="section-eyebrow">
-    ABOUT ME
-</p>
 
-<h2 data-i18n="profileTitle">
-    Profile
-</h2>
+    <!-- =========================================
+         CORE SKILLS
+    ========================================== -->
 
-<div class="profile-content">
+    <section id="skills">
 
-<p data-i18n="profileText1">
-    Enthusiastic and service-oriented IT professional
-    with practical experience in desktop support,
-    workplace management, hardware and software support,
-    and technical troubleshooting.
-</p>
+        <div class="section-inner">
 
-<p data-i18n="profileText2">
-    Experienced in installing, configuring, maintaining
-    and repairing laptops and workstations, as well as
-    supporting end users with daily IT problems.
-</p>
+            <p class="section-eyebrow" data-i18n="skillsEyebrow">
+                CORE SKILLS
+            </p>
 
-<p data-i18n="profileText3">
-    I am used to analysing technical problems independently,
-    supporting users directly and explaining solutions clearly.
-    I work accurately, solution-oriented and independently
-    and feel comfortable in an onsite environment with direct
-    end-user contact.
-</p>
+            <h2 data-i18n="skillsTitle">
+                Technical Skills
+            </h2>
 
-<p data-i18n="profileText4">
-    My combination of practical hardware experience,
-    IT knowledge, software testing and Dutch language
-    skills makes me suitable for Desktop Support,
-    Deskside Support and PC Migration positions.
-</p>
+            <div class="skills-grid">
 
-</div>
+                <article class="skill-card">
 
-</div>
+                    <div class="skill-card-number">
+                        01
+                    </div>
 
-</section>
+                    <h3 data-i18n="skill1Title">
+                        Desktop &amp; End-User Support
+                    </h3>
 
-<!-- =====================================
-     CORE SKILLS
-     ===================================== -->
+                    <ul>
 
-<section id="skills">
+                        <li data-i18n="skill1Item1">
+                            Windows 10/11 installation, configuration and troubleshooting
+                        </li>
 
-<div class="section-inner">
+                        <li data-i18n="skill1Item2">
+                            Desktop and laptop support
+                        </li>
 
-<p class="section-eyebrow">
-    EXPERTISE
-</p>
+                        <li data-i18n="skill1Item3">
+                            Hardware and software troubleshooting
+                        </li>
 
-<h2 data-i18n="skillsTitle">
-    Core Skills
-</h2>
+                        <li data-i18n="skill1Item4">
+                            Microsoft 365 and Office support
+                        </li>
 
-<div class="skills-grid">
+                        <li data-i18n="skill1Item5">
+                            User account and login troubleshooting
+                        </li>
 
-<article class="skill-card">
+                        <li data-i18n="skill1Item6">
+                            Network and connectivity troubleshooting
+                        </li>
 
-<div class="skill-card-number">
-    01
-</div>
+                        <li data-i18n="skill1Item7">
+                            Printer and peripheral support
+                        </li>
 
-<h3 data-i18n="desktopSupportTitle">
-    Desktop & End-User Support
-</h3>
+                        <li data-i18n="skill1Item8">
+                            Device setup and deployment
+                        </li>
 
-<ul>
+                        <li data-i18n="skill1Item9">
+                            Onsite and deskside support
+                        </li>
 
-<li data-i18n="skillDesktop1">
-    Onsite end-user support
-</li>
+                        <li data-i18n="skill1Item10">
+                            Clear communication with end users
+                        </li>
 
-<li data-i18n="skillDesktop2">
-    Workplace management and user support
-</li>
+                    </ul>
 
-<li data-i18n="skillDesktop3">
-    Laptop and desktop installation and configuration
-</li>
+                </article>
 
-<li data-i18n="skillDesktop4">
-    Hardware installation, maintenance, repair and upgrades
-</li>
 
-<li data-i18n="skillDesktop5">
-    Software installation and configuration
-</li>
+                <article class="skill-card">
 
-<li data-i18n="skillDesktop6">
-    Windows 10/11
-</li>
+                    <div class="skill-card-number">
+                        02
+                    </div>
 
-<li data-i18n="skillDesktop7">
-    Hardware and software troubleshooting
-</li>
+                    <h3 data-i18n="skill2Title">
+                        Device Preparation &amp; Migration
+                    </h3>
 
-<li data-i18n="skillDesktop8">
-    Technical problem solving
-</li>
+                    <ul>
 
-<li data-i18n="skillDesktop9">
-    Technical user support
-</li>
+                        <li data-i18n="skill2Item1">
+                            Laptop and desktop preparation
+                        </li>
 
-<li data-i18n="skillDesktop10">
-    User instruction and technical explanation
-</li>
+                        <li data-i18n="skill2Item2">
+                            Windows installation and configuration
+                        </li>
 
-</ul>
+                        <li data-i18n="skill2Item3">
+                            Software and application installation
+                        </li>
 
-</article>
+                        <li data-i18n="skill2Item4">
+                            User profile and data migration
+                        </li>
 
-<article class="skill-card">
+                        <li data-i18n="skill2Item5">
+                            Hardware replacement and upgrades
+                        </li>
 
-<div class="skill-card-number">
-    02
-</div>
+                        <li data-i18n="skill2Item6">
+                            Device inventory and documentation
+                        </li>
 
-<h3 data-i18n="migrationTitle">
-    Device Preparation & Migration
-</h3>
+                        <li data-i18n="skill2Item7">
+                            Basic understanding of Intune and Autopilot
+                        </li>
 
-<ul>
+                        <li data-i18n="skill2Item8">
+                            Systematic deployment and troubleshooting
+                        </li>
 
-<li data-i18n="skillMigration1">
-    Preparing and configuring laptops and workstations
-</li>
+                    </ul>
 
-<li data-i18n="skillMigration2">
-    Windows installation, configuration and updates
-</li>
+                </article>
 
-<li data-i18n="skillMigration3">
-    Installing and configuring required software
-</li>
 
-<li data-i18n="skillMigration4">
-    Hardware checks and maintenance before deployment
-</li>
+                <article class="skill-card">
 
-<li data-i18n="skillMigration5">
-    Repairing and preparing defective laptops for reuse
-</li>
+                    <div class="skill-card-number">
+                        03
+                    </div>
 
-<li data-i18n="skillMigration6">
-    Supporting users during and after device replacement
-</li>
+                    <h3 data-i18n="skill3Title">
+                        IT &amp; Technical Skills
+                    </h3>
 
-<li data-i18n="skillMigration7">
-    Hardware upgrades and maintenance
-</li>
+                    <ul>
 
-<li data-i18n="skillMigration8">
-    Systematic documentation of technical work
-</li>
+                        <li data-i18n="skill3Item1">
+                            Windows 10/11
+                        </li>
 
-</ul>
+                        <li data-i18n="skill3Item2">
+                            Hardware repair and upgrades
+                        </li>
 
-</article>
+                        <li data-i18n="skill3Item3">
+                            Microsoft 365 / Microsoft Office
+                        </li>
 
-<article class="skill-card">
+                        <li data-i18n="skill3Item4">
+                            Networking and basic system administration
+                        </li>
 
-<div class="skill-card-number">
-    03
-</div>
+                        <li data-i18n="skill3Item5">
+                            Python, Java and MySQL
+                        </li>
 
-<h3 data-i18n="technicalSkillsTitle">
-    IT & Technical Skills
-</h3>
+                        <li data-i18n="skill3Item6">
+                            HTML, CSS and JavaScript
+                        </li>
 
-<ul>
+                        <li data-i18n="skill3Item7">
+                            Playwright, Postman and k6
+                        </li>
 
-<li data-i18n="technicalSkill1">
-    Windows 10/11 installation, configuration,
-    migration, updates and troubleshooting
-</li>
+                        <li data-i18n="skill3Item8">
+                            Git and GitHub Actions
+                        </li>
 
-<li data-i18n="technicalSkill2">
-    Computer hardware repair and upgrades
-</li>
+                        <li data-i18n="skill3Item9">
+                            API and software testing
+                        </li>
 
-<li data-i18n="technicalSkill3">
-    Microsoft 365 / Office
-</li>
+                    </ul>
 
-<li>
-    Python, Java, MySQL
-</li>
+                </article>
 
-<li>
-    HTML / CSS / JavaScript
-</li>
+            </div>
 
-<li>
-    Playwright, Postman, k6
-</li>
+        </div>
 
-<li>
-    Git & GitHub Actions
-</li>
+    </section>
 
-<li data-i18n="technicalSkill8">
-    API testing and technical analysis
-</li>
 
-</ul>
+    <!-- =========================================
+         PERSONAL COMPETENCIES
+    ========================================== -->
 
-</article>
+    <section id="competencies">
 
-</div>
+        <div class="section-inner">
 
-</div>
+            <p class="section-eyebrow" data-i18n="competenciesEyebrow">
+                PROFESSIONAL STRENGTHS
+            </p>
 
-</section>
+            <h2 data-i18n="competenciesTitle">
+                Personal Competencies
+            </h2>
 
-<!-- =====================================
-     PERSONAL COMPETENCIES
-     ===================================== -->
+            <div class="competencies-content">
 
-<section id="competencies">
+                <p
+                    class="competencies-text"
+                    data-i18n="competenciesText"
+                >
+                    Analytical thinking, problem solving, adaptability,
+                    responsibility, teamwork, communication, organisation,
+                    continuous learning and a strong service-oriented approach.
+                    I am comfortable working independently as well as as part
+                    of a technical or multidisciplinary team.
+                </p>
 
-<div class="section-inner">
+            </div>
 
-<p class="section-eyebrow">
-    STRENGTHS
-</p>
+        </div>
 
-<h2 data-i18n="competenciesTitle">
-    Personal Competencies
-</h2>
+    </section>
 
-<div class="competencies-content">
 
-<p
-class="competencies-text"
-data-i18n="competenciesText"
->
-    Service-oriented and customer-focused IT professional
-    with a practical, solution-oriented mindset.
-    Comfortable working independently and taking responsibility
-    for assigned tasks, while contributing effectively as part
-    of a team. Open to change and able to adapt quickly to new
-    technologies, systems, processes, and working environments.
-    Professional and calm under pressure, with strong
-    communication skills, attention to detail, and a strong
-    commitment to continuous learning and improvement.
-</p>
+    <!-- =========================================
+         EXPERIENCE
+    ========================================== -->
 
-</div>
+    <section id="experience">
 
-</div>
+        <div class="section-inner">
 
-</section>
+            <p class="section-eyebrow" data-i18n="experienceEyebrow">
+                PROFESSIONAL EXPERIENCE
+            </p>
 
-<!-- =====================================
-     EXPERIENCE
-     ===================================== -->
+            <h2 data-i18n="experienceTitle">
+                Experience
+            </h2>
 
-<section id="experience">
+            <div class="experience-timeline">
 
-<div class="section-inner">
+                <article class="experience-card">
 
-<p class="section-eyebrow">
-    CAREER
-</p>
+                    <div class="timeline-marker">
+                        01
+                    </div>
 
-<h2 data-i18n="experienceTitle">
-    Work Experience
-</h2>
+                    <div class="experience-header">
 
-<div class="experience-timeline">
+                        <div>
 
-<article class="experience-card">
+                            <h3 data-i18n="experience1Title">
+                                ICT Administrator
+                            </h3>
 
-<div class="timeline-marker">
-    01
-</div>
+                            <p class="company">
+                                Wereldwijs Basisschool Rotterdam
+                            </p>
 
-<div class="experience-header">
+                        </div>
 
-<div>
+                        <div
+                            class="experience-date"
+                            data-i18n="experience1Date"
+                        >
+                            April 2024 – Present
+                        </div>
 
-<h3 data-i18n="experience1Title">
-    ICT Administrator
-</h3>
+                    </div>
 
-<p class="company">
-    Wereldwijs Basisschool Rotterdam
-</p>
+                    <ul>
 
-</div>
+                        <li data-i18n="experience1Item1">
+                            Provide day-to-day ICT support to teachers, staff and students.
+                        </li>
 
-<span class="experience-date">
-    April 2024 – Present
-</span>
+                        <li data-i18n="experience1Item2">
+                            Troubleshoot Windows devices, applications, accounts and connectivity issues.
+                        </li>
 
-</div>
+                        <li data-i18n="experience1Item3">
+                            Prepare, configure and maintain laptops, desktops and other ICT equipment.
+                        </li>
 
-<ul>
+                        <li data-i18n="experience1Item4">
+                            Support Microsoft 365 and Office applications.
+                        </li>
 
-<li data-i18n="experience1Bullet1">
-    Responsible for daily IT management and user support
-    within the school environment.
-</li>
+                        <li data-i18n="experience1Item5">
+                            Manage and troubleshoot printers, peripherals and classroom technology.
+                        </li>
 
-<li data-i18n="experience1Bullet2">
-    Installing, configuring and maintaining laptops,
-    workstations and other IT equipment.
-</li>
+                        <li data-i18n="experience1Item6">
+                            Assist with user accounts, access and basic system administration tasks.
+                        </li>
 
-<li data-i18n="experience1Bullet3">
-    Preparing devices for teachers, administration and students.
-</li>
+                        <li data-i18n="experience1Item7">
+                            Support network connectivity and basic infrastructure troubleshooting.
+                        </li>
 
-<li data-i18n="experience1Bullet4">
-    Resolving hardware and software issues and performing
-    technical troubleshooting.
-</li>
+                        <li data-i18n="experience1Item8">
+                            Perform hardware upgrades, replacements and preventive maintenance.
+                        </li>
 
-<li data-i18n="experience1Bullet5">
-    Supporting end users with daily IT, workplace and
-    software problems.
-</li>
+                        <li data-i18n="experience1Item9">
+                            Document technical issues and solutions where required.
+                        </li>
 
-<li data-i18n="experience1Bullet6">
-    Performing system updates, maintenance and hardware upgrades.
-</li>
+                        <li data-i18n="experience1Item10">
+                            Communicate technical solutions clearly to non-technical users.
+                        </li>
 
-<li data-i18n="experience1Bullet7">
-    Analysing technical problems and independently finding
-    appropriate solutions.
-</li>
+                    </ul>
 
-<li data-i18n="experience1Bullet8">
-    Repairing and maintaining computer equipment to support
-    workplace continuity.
-</li>
+                </article>
 
-<li data-i18n="experience1Bullet9">
-    Guiding users in the use of hardware, software and
-    digital systems.
-</li>
 
-<li data-i18n="experience1Bullet10">
-    Identifying recurring IT problems and contributing to
-    practical improvements.
-</li>
+                <article class="experience-card">
 
-</ul>
+                    <div class="timeline-marker">
+                        02
+                    </div>
 
-</article>
+                    <div class="experience-header">
 
-<article class="experience-card">
+                        <div>
 
-<div class="timeline-marker">
-    02
-</div>
+                            <h3 data-i18n="experience2Title">
+                                Software Tester
+                            </h3>
 
-<div class="experience-header">
+                            <p class="company">
+                                Motopp – Amsterdam
+                            </p>
 
-<div>
+                        </div>
 
-<h3 data-i18n="experience2Title">
-    Software Tester
-</h3>
+                        <div
+                            class="experience-date"
+                            data-i18n="experience2Date"
+                        >
+                            2026
+                        </div>
 
-<p class="company">
-    Motopp – Amsterdam
-</p>
+                    </div>
 
-</div>
+                    <ul>
 
-<span class="experience-date">
-    2026
-</span>
+                        <li data-i18n="experience2Item1">
+                            Performed functional and API testing of web applications.
+                        </li>
 
-</div>
+                        <li data-i18n="experience2Item2">
+                            Created automated API tests using Playwright.
+                        </li>
 
-<ul>
+                        <li data-i18n="experience2Item3">
+                            Developed and maintained end-to-end test scenarios.
+                        </li>
 
-<li data-i18n="experience2Bullet1">
-    Completed an IT traineeship with practical experience
-    as a software tester in a professional IT environment.
-</li>
+                        <li data-i18n="experience2Item4">
+                            Tested authentication, authorisation and RBAC behaviour.
+                        </li>
 
-<li data-i18n="experience2Bullet2">
-    Performed functional and technical testing within a
-    software development project.
-</li>
+                        <li data-i18n="experience2Item5">
+                            Performed security and privacy testing including IDOR, XSS and SQL injection checks.
+                        </li>
 
-<li data-i18n="experience2Bullet3">
-    Analysed error messages, technical problems and
-    unexpected system behaviour.
-</li>
+                        <li data-i18n="experience2Item6">
+                            Created performance tests using k6.
+                        </li>
 
-<li data-i18n="experience2Bullet4">
-    Performed systematic troubleshooting and root-cause analysis.
-</li>
+                        <li data-i18n="experience2Item7">
+                            Integrated automated tests into GitHub Actions CI pipelines.
+                        </li>
 
-<li data-i18n="experience2Bullet5">
-    Worked with APIs, test environments and various IT tools.
-</li>
+                        <li data-i18n="experience2Item8">
+                            Worked with API documentation, Swagger/OpenAPI and test environments.
+                        </li>
 
-<li data-i18n="experience2Bullet6">
-    Documented test results, technical findings and defects.
-</li>
+                        <li data-i18n="experience2Item9">
+                            Reported defects and collaborated with development teams to improve software quality.
+                        </li>
 
-<li data-i18n="experience2Bullet7">
-    Collaborated with developers and IT professionals to
-    analyse and resolve technical issues.
-</li>
+                    </ul>
 
-<li data-i18n="experience2Bullet8">
-    Worked independently on technical tasks and followed up
-    on findings.
-</li>
+                    <div class="additional-experience">
 
-<li data-i18n="experience2Bullet9">
-    Experience with Playwright, Postman, API testing,
-    Git, GitHub Actions and k6.
-</li>
+                        <h4 data-i18n="experience2AdditionalTitle">
+                            Additional Technical Support
+                        </h4>
 
-</ul>
+                        <ul>
 
-<div class="additional-experience">
+                            <li data-i18n="experience2AdditionalItem1">
+                                Provided practical hardware and technical support during the traineeship.
+                            </li>
 
-<h4 data-i18n="volunteerHardwareTitle">
-    Additional Volunteer Hardware Support at Motopp
-</h4>
+                            <li data-i18n="experience2AdditionalItem2">
+                                Assisted with computer setup, configuration and troubleshooting.
+                            </li>
 
-<ul>
+                            <li data-i18n="experience2AdditionalItem3">
+                                Diagnosed hardware and software issues.
+                            </li>
 
-<li data-i18n="hardwareBullet1">
-    Maintained and repaired defective Motopp laptops.
-</li>
+                            <li data-i18n="experience2AdditionalItem4">
+                                Supported users with technical problems.
+                            </li>
 
-<li data-i18n="hardwareBullet2">
-    Investigated hardware problems and identified
-    technical defects.
-</li>
+                            <li data-i18n="experience2AdditionalItem5">
+                                Applied systematic troubleshooting and problem-solving techniques.
+                            </li>
 
-<li data-i18n="hardwareBullet3">
-    Maintained laptops, checked components and performed
-    hardware upgrades where required.
-</li>
+                        </ul>
 
-<li data-i18n="hardwareBullet4">
-    Tested repaired devices and prepared them for reuse.
-</li>
+                    </div>
 
-<li data-i18n="hardwareBullet5">
-    Independently resolved technical problems to make
-    available hardware usable again.
-</li>
+                </article>
 
-</ul>
 
-</div>
+                <article class="experience-card">
 
-</article>
+                    <div class="timeline-marker">
+                        03
+                    </div>
 
-<article class="experience-card">
+                    <div class="experience-header">
 
-<div class="timeline-marker">
-    03
-</div>
+                        <div>
 
-<div class="experience-header">
+                            <h3 data-i18n="experience3Title">
+                                Volunteer Python Instructor
+                            </h3>
 
-<div>
+                            <p class="company">
+                                AZC Echt
+                            </p>
 
-<h3 data-i18n="experience3Title">
-    Volunteer Python Instructor
-</h3>
+                        </div>
 
-<p class="company">
-    AZC Echt
-</p>
+                        <div
+                            class="experience-date"
+                            data-i18n="experience3Date"
+                        >
+                            April 2023
+                        </div>
 
-</div>
+                    </div>
 
-<span class="experience-date">
-    April 2023
-</span>
+                    <ul>
 
-</div>
+                        <li data-i18n="experience3Item1">
+                            Introduced learners to fundamental Python programming concepts.
+                        </li>
 
-<ul>
+                        <li data-i18n="experience3Item2">
+                            Prepared practical exercises and learning activities.
+                        </li>
 
-<li data-i18n="experience3Bullet1">
-    Delivered introductory Python lessons for participants
-    interested in IT.
-</li>
+                        <li data-i18n="experience3Item3">
+                            Supported learners with programming problems and debugging.
+                        </li>
 
-<li data-i18n="experience3Bullet2">
-    Supported participants with technical exercises and
-    problem solving.
-</li>
+                        <li data-i18n="experience3Item4">
+                            Adapted explanations to different learning levels and backgrounds.
+                        </li>
 
-<li data-i18n="experience3Bullet3">
-    Explained technical subjects clearly and accessibly.
-</li>
+                    </ul>
 
-<li data-i18n="experience3Bullet4">
-    Provided individual guidance for technical questions.
-</li>
+                </article>
 
-</ul>
 
-</article>
+                <article class="experience-card">
 
-<article class="experience-card">
+                    <div class="timeline-marker">
+                        04
+                    </div>
 
-<div class="timeline-marker">
-    04
-</div>
+                    <div class="experience-header">
 
-<div class="experience-header">
+                        <div>
 
-<div>
+                            <h3 data-i18n="experience4Title">
+                                ICT Teacher
+                            </h3>
 
-<h3 data-i18n="experience4Title">
-    ICT Teacher
-</h3>
+                            <p class="company">
+                                Huda Integrated School
+                            </p>
 
-<p class="company">
-    Huda Integrated School
-</p>
+                        </div>
 
-</div>
+                        <div
+                            class="experience-date"
+                            data-i18n="experience4Date"
+                        >
+                            January 2016 – January 2022
+                        </div>
 
-<span class="experience-date">
-    January 2016 – January 2022
-</span>
+                    </div>
 
-</div>
+                    <ul>
 
-<ul>
+                        <li data-i18n="experience4Item1">
+                            Taught ICT and computer-related subjects to students.
+                        </li>
 
-<li data-i18n="experience4Bullet1">
-    Delivered lessons in digital skills and basic IT.
-</li>
+                        <li data-i18n="experience4Item2">
+                            Planned and delivered technology-focused lessons.
+                        </li>
 
-<li data-i18n="experience4Bullet2">
-    Supported students and colleagues in using computers
-    and digital tools.
-</li>
+                        <li data-i18n="experience4Item3">
+                            Supported students with computer hardware and software.
+                        </li>
 
-<li data-i18n="experience4Bullet3">
-    Assisted users with technical questions and problems.
-</li>
+                        <li data-i18n="experience4Item4">
+                            Managed classroom technology and digital learning resources.
+                        </li>
 
-<li data-i18n="experience4Bullet4">
-    Worked with different digital learning environments
-    and educational software.
-</li>
+                        <li data-i18n="experience4Item5">
+                            Integrated technology into teaching and learning activities.
+                        </li>
 
-<li data-i18n="experience4Bullet5">
-    Installed and used software and digital tools within
-    the educational environment.
-</li>
+                        <li data-i18n="experience4Item6">
+                            Provided technical guidance and troubleshooting support.
+                        </li>
 
-<li data-i18n="experience4Bullet6">
-    Contributed to the daily use and effective implementation
-    of technology.
-</li>
+                        <li data-i18n="experience4Item7">
+                            Developed strong communication, organisation and leadership skills.
+                        </li>
 
-<li data-i18n="experience4Bullet7">
-    Communicated daily with users with different levels
-    of technical knowledge.
-</li>
+                    </ul>
 
-</ul>
+                </article>
 
-</article>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </section>
 
-</section>
 
-<!-- =====================================
-     EDUCATION
-     ===================================== -->
+    <!-- =========================================
+         EDUCATION
+    ========================================== -->
 
-<section id="education">
+    <section id="education">
 
-<div class="section-inner">
+        <div class="section-inner">
 
-<p class="section-eyebrow">
-    EDUCATION
-</p>
+            <p class="section-eyebrow" data-i18n="educationEyebrow">
+                EDUCATION
+            </p>
 
-<h2 data-i18n="educationTitle">
-    Education
-</h2>
+            <h2 data-i18n="educationTitle">
+                Education
+            </h2>
 
-<div class="education-grid">
+            <div class="education-grid">
 
-<article class="education-card">
+                <article class="education-card">
 
-<span class="education-number">
-    01
-</span>
+                    <div class="education-number">
+                        01
+                    </div>
 
-<h3>
-    Motopp – Amsterdam
-</h3>
+                    <h3 data-i18n="education1Title">
+                        IT Traineeship
+                    </h3>
 
-<p data-i18n="education1">
-    IT Traineeship – completed. IT bootcamp and practical
-    internship successfully completed in a professional
-    IT environment.
-</p>
+                    <p>
+                        Motopp – Amsterdam
+                        <br>
+                        <span data-i18n="education1Status">
+                            Completed
+                        </span>
+                    </p>
 
-</article>
+                </article>
 
-<article class="education-card">
 
-<span class="education-number">
-    02
-</span>
+                <article class="education-card">
 
-<h3>
-    University of the People – California, USA
-</h3>
+                    <div class="education-number">
+                        02
+                    </div>
 
-<p data-i18n="education2">
-    Associate Degree – Computer Science
-</p>
+                    <h3 data-i18n="education2Title">
+                        Associate Degree – Computer Science
+                    </h3>
 
-</article>
+                    <p>
+                        University of the People
+                        <br>
+                        California, USA
+                    </p>
 
-<article class="education-card">
+                </article>
 
-<span class="education-number">
-    03
-</span>
 
-<h3>
-    University of South Wales – Cardiff, UK
-</h3>
+                <article class="education-card">
 
-<p data-i18n="education3">
-    Master of Arts – Education, Innovation in Learning and Teaching
-</p>
+                    <div class="education-number">
+                        03
+                    </div>
 
-</article>
+                    <h3 data-i18n="education3Title">
+                        Master of Arts – Education, Innovation in Learning and Teaching
+                    </h3>
 
-<article class="education-card">
+                    <p>
+                        University of South Wales
+                        <br>
+                        Cardiff, UK
+                    </p>
 
-<span class="education-number">
-    04
-</span>
+                </article>
 
-<h3>
-    Çanakkale Onsekiz Mart University
-</h3>
 
-<p data-i18n="education4">
-    Bachelor's Degree – Primary Education
-</p>
+                <article class="education-card">
 
-</article>
+                    <div class="education-number">
+                        04
+                    </div>
 
-</div>
+                    <h3 data-i18n="education4Title">
+                        Bachelor's Degree – Primary Education
+                    </h3>
 
-</div>
+                    <p>
+                        Çanakkale Onsekiz Mart University
+                    </p>
 
-</section>
+                </article>
 
-<!-- =====================================
-     LANGUAGES
-     ===================================== -->
+            </div>
 
-<section id="languages">
+        </div>
 
-<div class="section-inner">
+    </section>
 
-<p class="section-eyebrow">
-    COMMUNICATION
-</p>
 
-<h2 data-i18n="languagesTitle">
-    Languages
-</h2>
+    <!-- =========================================
+         COURSES
+    ========================================== -->
 
-<div class="language-list">
+    <section id="courses">
 
-<div class="language-item">
+        <div class="section-inner">
 
-<span data-i18n="dutchLanguage">
-    Dutch
-</span>
+            <p class="section-eyebrow" data-i18n="coursesEyebrow">
+                PROFESSIONAL DEVELOPMENT
+            </p>
 
-<div class="language-level">
+            <h2 data-i18n="coursesTitle">
+                Courses &amp; Certifications
+            </h2>
 
-<strong>
-    B1+
-</strong>
+            <div class="courses-grid">
 
-</div>
+                <article class="course-card">
 
-</div>
+                    <div class="course-number">
+                        01
+                    </div>
 
-<div class="language-item">
+                    <h3>
+                        Coursera
+                    </h3>
 
-<span data-i18n="englishLanguage">
-    English
-</span>
+                    <ul>
 
-<div class="language-level">
+                        <li data-i18n="course1Item1">
+                            Google IT Support Professional Certificate
+                        </li>
 
-<strong data-i18n="fluent">
-    Fluent
-</strong>
+                    </ul>
 
-</div>
+                </article>
 
-</div>
 
-<div class="language-item">
+                <article class="course-card">
 
-<span data-i18n="russianLanguage">
-    Russian
-</span>
+                    <div class="course-number">
+                        02
+                    </div>
 
-<div class="language-level">
+                    <h3>
+                        Udemy
+                    </h3>
 
-<strong data-i18n="fluent">
-    Fluent
-</strong>
+                    <ul>
 
-</div>
+                        <li data-i18n="course2Item1">
+                            Jira
+                        </li>
 
-</div>
+                        <li data-i18n="course2Item2">
+                            Git &amp; GitHub
+                        </li>
 
-<div class="language-item">
+                        <li data-i18n="course2Item3">
+                            Postman
+                        </li>
 
-<span data-i18n="turkishLanguage">
-    Turkish
-</span>
+                        <li data-i18n="course2Item4">
+                            Playwright
+                        </li>
 
-<div class="language-level">
+                    </ul>
 
-<strong data-i18n="native">
-    Native
-</strong>
+                </article>
 
-</div>
 
-</div>
+                <article class="course-card">
 
-</div>
+                    <div class="course-number">
+                        03
+                    </div>
 
-</div>
+                    <h3>
+                        Agile &amp; Scrum
+                    </h3>
 
-</section>
+                    <ul>
 
-<!-- =====================================
-     CONTACT
-     ===================================== -->
-<!-- =====================================
-     PERSONAL INTERESTS
-     ===================================== -->
+                        <li data-i18n="course3Item1">
+                            Agile principles and practices
+                        </li>
 
-<section id="other">
+                        <li data-i18n="course3Item2">
+                            Scrum framework
+                        </li>
 
-<div class="section-inner">
+                        <li data-i18n="course3Item3">
+                            Agile software development
+                        </li>
 
-<p class="section-eyebrow" data-i18n="otherEyebrow">
-    PERSONAL INTERESTS
-</p>
+                    </ul>
 
-<h2 data-i18n="otherTitle">
-    Hobbies
-</h2>
+                </article>
 
-<ul class="other-list">
 
-<li data-i18n="other1">
-    Chess
-</li>
+                <article class="course-card">
 
-<li data-i18n="other2">
-    Badminton
-</li>
+                    <div class="course-number">
+                        04
+                    </div>
 
-<li data-i18n="other3">
-    Woodworking
-</li>
+                    <h3>
+                        Microsoft
+                    </h3>
 
-<li data-i18n="other4">
-    Nature walks and outdoor activities
-</li>
+                    <ul>
 
-<li data-i18n="other5">
-    Following technology trends
-</li>
+                        <li data-i18n="course4Item1">
+                            Microsoft Intune
+                            <span class="course-status" data-i18n="courseOngoing">
+                                Ongoing
+                            </span>
+                        </li>
 
-<li data-i18n="other6">
-    Learning new things and developing new skills
-</li>
+                        <li data-i18n="course4Item2">
+                            Microsoft 365 E5
+                            <span class="course-status" data-i18n="coursePlanned">
+                                Planned
+                            </span>
+                        </li>
 
-</ul>
+                    </ul>
 
-</div>
+                </article>
 
-</section>
+            </div>
 
 
+            <div class="continuous-learning">
 
-<section id="contact">
+                <h3 data-i18n="continuousLearningTitle">
+                    Continuous Learning
+                </h3>
 
-<div class="section-inner">
+                <p data-i18n="continuousLearningText">
+                    I continuously develop my technical skills through practical
+                    projects, professional training and self-directed learning,
+                    with a particular focus on IT support, Microsoft technologies,
+                    system administration, software testing and automation.
+                </p>
 
-<p class="section-eyebrow">
-    GET IN TOUCH
-</p>
+            </div>
 
-<h2 data-i18n="contactTitle">
-    Contact
-</h2>
+        </div>
 
-<div class="contact-grid">
+    </section>
 
-<a
-href="https://wa.me/31644955335" target="_blank" rel="noopener noreferrer"
-class="contact-card"
 
->
+    <!-- =========================================
+         LANGUAGES
+    ========================================== -->
 
-<span class="contact-label">
+    <section id="languages">
 
-<span data-i18n="phoneLabel">
-    Phone:
-</span>
+        <div class="section-inner">
 
-</span>
+            <p class="section-eyebrow" data-i18n="languagesEyebrow">
+                LANGUAGES
+            </p>
 
-<strong>
-    +31 6 44955335
-</strong>
+            <h2 data-i18n="languagesTitle">
+                Language Skills
+            </h2>
 
-</a>
+            <div class="language-list">
 
-<a
-href="mailto:zekitazegul@gmail.com"
-class="contact-card"
+                <div class="language-item">
 
->
+                    <span data-i18n="languageDutch">
+                        Dutch
+                    </span>
 
-<span class="contact-label">
+                    <span class="language-level">
+                        <strong data-i18n="languageDutchLevel">
+                            B1+
+                        </strong>
+                    </span>
 
-<span data-i18n="emailLabel">
-    Email:
-</span>
+                </div>
 
-</span>
 
-<strong>
-    zekitazegul@gmail.com
-</strong>
+                <div class="language-item">
 
-</a>
+                    <span data-i18n="languageEnglish">
+                        English
+                    </span>
 
-<div class="contact-card">
+                    <span class="language-level">
+                        <strong data-i18n="languageEnglishLevel">
+                            Fluent
+                        </strong>
+                    </span>
 
-<span class="contact-label">
+                </div>
 
-<span data-i18n="locationLabel">
-    Location:
-</span>
 
-</span>
+                <div class="language-item">
 
-<strong>
-    Poortugaal – Rotterdam
-</strong>
+                    <span data-i18n="languageRussian">
+                        Russian
+                    </span>
 
-</div>
+                    <span class="language-level">
+                        <strong data-i18n="languageRussianLevel">
+                            Fluent
+                        </strong>
+                    </span>
 
-</div>
+                </div>
 
-</div>
 
-</section>
+                <div class="language-item">
+
+                    <span data-i18n="languageTurkish">
+                        Turkish
+                    </span>
+
+                    <span class="language-level">
+                        <strong data-i18n="languageTurkishLevel">
+                            Native
+                        </strong>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         HOBBIES
+    ========================================== -->
+
+    <section id="other">
+
+        <div class="section-inner">
+
+            <p class="section-eyebrow" data-i18n="otherEyebrow">
+                PERSONAL INTERESTS
+            </p>
+
+            <h2 data-i18n="otherTitle">
+                Hobbies
+            </h2>
+
+            <ul class="other-list">
+
+                <li data-i18n="hobby1">
+                    Chess
+                </li>
+
+                <li data-i18n="hobby2">
+                    Badminton
+                </li>
+
+                <li data-i18n="hobby3">
+                    Woodworking
+                </li>
+
+                <li data-i18n="hobby4">
+                    Nature walks and outdoor activities
+                </li>
+
+                <li data-i18n="hobby5">
+                    Following technology trends
+                </li>
+
+                <li data-i18n="hobby6">
+                    Learning new things and developing skills
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CONTACT
+    ========================================== -->
+
+    <section id="contact">
+
+        <div class="section-inner">
+
+            <p class="section-eyebrow" data-i18n="contactEyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2 data-i18n="contactTitle">
+                Contact
+            </h2>
+
+            <div class="contact-grid">
+
+                <!-- WhatsApp -->
+
+                <a
+                    class="contact-card"
+                    href="https://wa.me/31644955335"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact Zeki Tazegul on WhatsApp"
+                >
+
+                    <span
+                        class="contact-label"
+                        data-i18n="whatsappLabel"
+                    >
+                        WhatsApp
+                    </span>
+
+                    <strong>
+                        +31 6 44955335
+                    </strong>
+
+                </a>
+
+
+                <!-- Email -->
+
+                <a
+                    class="contact-card"
+                    href="mailto:zekitazegul@gmail.com"
+                    aria-label="Send email to Zeki Tazegul"
+                >
+
+                    <span
+                        class="contact-label"
+                        data-i18n="emailLabel"
+                    >
+                        Email
+                    </span>
+
+                    <strong>
+                        zekitazegul@gmail.com
+                    </strong>
+
+                </a>
+
+
+                <!-- LinkedIn -->
+
+                <a
+                    class="contact-card"
+                    href="https://www.linkedin.com/in/zeki-tazegul/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Zeki Tazegul LinkedIn profile"
+                >
+
+                    <span
+                        class="contact-label"
+                        data-i18n="linkedinLabel"
+                    >
+                        LinkedIn
+                    </span>
+
+                    <strong>
+                        linkedin.com/in/zeki-tazegul
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
+
+<!-- =========================================
+     FOOTER
+========================================== -->
+
 <footer>
 
-<p>
-
-© 2026 Zeki Tazegul.
-
-<span data-i18n="footerText">
-    All rights reserved.
-</span>
-
-</p>
+    <p data-i18n="footerText">
+        © 2026 Zeki Tazegul. All rights reserved.
+    </p>
 
 </footer>
+
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
