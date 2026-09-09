@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -30,181 +30,171 @@
         rel="stylesheet"
         href="style.css"
     >
+
 </head>
 
 <body>
 
-    <!-- ========================================
-         HEADER
-    ========================================= -->
+<header class="site-header">
 
-    <header class="site-header">
+    <div class="container header-container">
 
-        <div class="container header-container">
+        <a
+            href="#hero"
+            class="logo"
+        >
+            Zeki Tazegul
+        </a>
 
-            <a
-                href="#hero"
-                class="logo"
-            >
-                Zeki Tazegul
-            </a>
+        <nav
+            id="mobile-navigation"
+            class="nav-right"
+            aria-label="Main navigation"
+        >
 
-            <nav
-                id="mobile-navigation"
-                class="nav-right"
-                aria-label="Main navigation"
-            >
+            <ul>
 
-                <ul>
+                <li>
+                    <a
+                        href="#profile"
+                        data-i18n="navProfile"
+                    >
+                        Profile
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#profile"
-                            data-i18n="navProfile"
-                        >
-                            Profile
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#skills"
+                        data-i18n="navSkills"
+                    >
+                        Skills
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#skills"
-                            data-i18n="navSkills"
-                        >
-                            Skills
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#competencies"
+                        data-i18n="navCompetencies"
+                    >
+                        Strengths
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#competencies"
-                            data-i18n="navCompetencies"
-                        >
-                            Strengths
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#experience"
+                        data-i18n="navExperience"
+                    >
+                        Experience
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#experience"
-                            data-i18n="navExperience"
-                        >
-                            Experience
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#education"
+                        data-i18n="navEducation"
+                    >
+                        Education
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#education"
-                            data-i18n="navEducation"
-                        >
-                            Education
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#languages"
+                        data-i18n="navLanguages"
+                    >
+                        Languages
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#languages"
-                            data-i18n="navLanguages"
-                        >
-                            Languages
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#other"
+                        data-i18n="navOther"
+                    >
+                        Hobbies
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#other"
-                            data-i18n="navOther"
-                        >
-                            Hobbies
-                        </a>
-                    </li>
+                <li>
+                    <a
+                        href="#contact"
+                        data-i18n="navContact"
+                    >
+                        Contact
+                    </a>
+                </li>
 
-                    <li>
-                        <a
-                            href="#contact"
-                            data-i18n="navContact"
-                        >
-                            Contact
-                        </a>
-                    </li>
+            </ul>
 
-                </ul>
+        </nav>
 
-            </nav>
-
-            <!-- Language switcher -->
-
-            <div
-                class="language-switcher"
-                aria-label="Language selection"
-            >
-
-                <button
-                    id="language-en"
-                    class="language-button active"
-                    type="button"
-                    aria-label="Switch to English"
-                    aria-pressed="true"
-                >
-                    EN
-                </button>
-
-                <span
-                    class="language-separator"
-                    aria-hidden="true"
-                >
-                    /
-                </span>
-
-                <button
-                    id="language-nl"
-                    class="language-button"
-                    type="button"
-                    aria-label="Switch to Dutch"
-                    aria-pressed="false"
-                >
-                    NL
-                </button>
-
-            </div>
-
-            <!-- Mobile menu button -->
+        <div
+            class="language-switcher"
+            aria-label="Language selection"
+        >
 
             <button
-                id="mobile-menu-toggle"
-                class="mobile-menu-toggle"
+                id="language-en"
+                class="language-button active"
                 type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mobile-navigation"
+                aria-label="Switch to English"
+                aria-pressed="true"
             >
+                EN
+            </button>
 
-                <span></span>
-                <span></span>
-                <span></span>
+            <span
+                class="language-separator"
+                aria-hidden="true"
+            >
+                /
+            </span>
 
+            <button
+                id="language-nl"
+                class="language-button"
+                type="button"
+                aria-label="Switch to Dutch"
+                aria-pressed="false"
+            >
+                NL
             </button>
 
         </div>
 
-    </header>
-
-
-    <!-- ========================================
-         HERO
-    ========================================= -->
-
-    <main>
-
-        <section
-            id="hero"
-            class="hero-section"
+        <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
         >
 
-            <div class="container hero-container">
+            <span></span>
+            <span></span>
+            <span></span>
 
-                <div class="hero-content">
+        </button>
+
+    </div>
+
+</header>
+
+<main>
+
+    <section
+        id="hero"
+        class="hero-section"
+    >
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <div class="hero-main">
 
                     <div
                         class="hero-label"
@@ -225,10 +215,11 @@
                     </p>
 
                     <p class="hero-location">
-                        📍
+
                         <span data-i18n="heroLocation">
-                            Poortugaal – Rotterdam, Netherlands
+                            06 44955335 - zekitazegul@gmail.com - Poortugaal – Rotterdam
                         </span>
+
                     </p>
 
                     <p
@@ -264,7 +255,6 @@
 
                 </div>
 
-
                 <div class="hero-cards">
 
                     <div class="hero-card">
@@ -280,7 +270,6 @@
 
                     </div>
 
-
                     <div class="hero-card">
 
                         <h3 data-i18n="heroCard2Title">
@@ -294,7 +283,6 @@
 
                     </div>
 
-
                     <div class="hero-card">
 
                         <h3 data-i18n="heroCard3Title">
@@ -307,7 +295,6 @@
                         </p>
 
                     </div>
-
 
                     <div class="hero-card">
 
@@ -326,965 +313,953 @@
 
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
-        <!-- ========================================
-             PROFILE
-        ========================================= -->
+    <section
+        id="profile"
+        class="content-section"
+    >
 
-        <section
-            id="profile"
-            class="content-section"
-        >
+        <div class="container">
 
-            <div class="container">
+            <h2 data-i18n="profileTitle">
+                Profile
+            </h2>
 
-                <h2 data-i18n="profileTitle">
-                    Profile
-                </h2>
+            <div class="profile-content">
 
-                <div class="profile-content">
+                <p data-i18n="profileParagraph1">
+                    I am an IT professional with a multidisciplinary
+                    background combining IT support, software testing,
+                    system administration and education.
+                </p>
 
-                    <p data-i18n="profileParagraph1">
-                        I am an IT professional with a multidisciplinary
-                        background combining IT support, software testing,
-                        system administration and education.
-                    </p>
+                <p data-i18n="profileParagraph2">
+                    My technical background includes Windows environments,
+                    hardware and software troubleshooting, Microsoft 365,
+                    networking, Python, databases, web technologies and
+                    modern QA tools such as Playwright, Postman and k6.
+                </p>
 
-                    <p data-i18n="profileParagraph2">
-                        My technical background includes Windows environments,
-                        hardware and software troubleshooting, Microsoft 365,
-                        networking, Python, databases, web technologies and
-                        modern QA tools such as Playwright, Postman and k6.
-                    </p>
-
-                    <p data-i18n="profileParagraph3">
-                        Through my experience in education and IT, I have
-                        developed strong communication, organisation,
-                        problem-solving and user-support skills. I enjoy
-                        helping people solve technical problems while also
-                        improving systems and processes.
-                    </p>
-
-                </div>
+                <p data-i18n="profileParagraph3">
+                    Through my experience in education and IT, I have
+                    developed strong communication, organisation,
+                    problem-solving and user-support skills. I enjoy
+                    helping people solve technical problems while also
+                    improving systems and processes.
+                </p>
 
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
-        <!-- ========================================
-             SKILLS
-        ========================================= -->
+    <section
+        id="skills"
+        class="content-section"
+    >
 
-        <section
-            id="skills"
-            class="content-section"
-        >
+        <div class="container">
 
-            <div class="container">
+            <h2 data-i18n="skillsTitle">
+                Skills
+            </h2>
 
-                <h2 data-i18n="skillsTitle">
-                    Skills
-                </h2>
+            <div class="skills-grid">
 
-                <div class="skills-grid">
+                <article class="skill-card">
 
-                    <article class="skill-card">
+                    <h3 data-i18n="skillCard1Title">
+                        Desktop & End-User Support
+                    </h3>
 
-                        <h3 data-i18n="skillCard1Title">
-                            Desktop & End-User Support
-                        </h3>
+                    <ul>
 
-                        <ul>
+                        <li data-i18n="skill1">
+                            Windows 10 / 11 support
+                        </li>
 
-                            <li data-i18n="skill1">
-                                Windows 10 / 11 support
-                            </li>
+                        <li data-i18n="skill2">
+                            Hardware troubleshooting and repair
+                        </li>
 
-                            <li data-i18n="skill2">
-                                Hardware troubleshooting and repair
-                            </li>
+                        <li data-i18n="skill3">
+                            Device preparation and migration
+                        </li>
 
-                            <li data-i18n="skill3">
-                                Device preparation and migration
-                            </li>
+                        <li data-i18n="skill4">
+                            User account and profile support
+                        </li>
 
-                            <li data-i18n="skill4">
-                                User account and profile support
-                            </li>
+                        <li data-i18n="skill5">
+                            Microsoft 365 support
+                        </li>
 
-                            <li data-i18n="skill5">
-                                Microsoft 365 support
-                            </li>
+                    </ul>
 
-                        </ul>
+                </article>
 
-                    </article>
+                <article class="skill-card">
 
+                    <h3 data-i18n="skillCard2Title">
+                        IT & Technical Skills
+                    </h3>
 
-                    <article class="skill-card">
+                    <ul>
 
-                        <h3 data-i18n="skillCard2Title">
-                            IT & Technical Skills
-                        </h3>
+                        <li data-i18n="skill6">
+                            Microsoft Windows environments
+                        </li>
 
-                        <ul>
+                        <li data-i18n="skill7">
+                            Networking and connectivity
+                        </li>
 
-                            <li data-i18n="skill6">
-                                Microsoft Windows environments
-                            </li>
+                        <li data-i18n="skill8">
+                            Python
+                        </li>
 
-                            <li data-i18n="skill7">
-                                Networking and connectivity
-                            </li>
+                        <li data-i18n="skill9">
+                            Java
+                        </li>
 
-                            <li data-i18n="skill8">
-                                Python
-                            </li>
+                        <li data-i18n="skill10">
+                            MySQL
+                        </li>
 
-                            <li data-i18n="skill9">
-                                Java
-                            </li>
+                        <li data-i18n="skill11">
+                            HTML / CSS / JavaScript
+                        </li>
 
-                            <li data-i18n="skill10">
-                                MySQL
-                            </li>
+                    </ul>
 
-                            <li data-i18n="skill11">
-                                HTML / CSS / JavaScript
-                            </li>
+                </article>
 
-                        </ul>
+                <article class="skill-card">
 
-                    </article>
+                    <h3 data-i18n="skillCard3Title">
+                        QA & Development
+                    </h3>
 
+                    <ul>
 
-                    <article class="skill-card">
+                        <li data-i18n="skill12">
+                            Playwright
+                        </li>
 
-                        <h3 data-i18n="skillCard3Title">
-                            QA & Development
-                        </h3>
+                        <li data-i18n="skill13">
+                            API testing
+                        </li>
 
-                        <ul>
+                        <li data-i18n="skill14">
+                            Postman
+                        </li>
 
-                            <li data-i18n="skill12">
-                                Playwright
-                            </li>
+                        <li data-i18n="skill15">
+                            k6 performance testing
+                        </li>
 
-                            <li data-i18n="skill13">
-                                API testing
-                            </li>
+                        <li data-i18n="skill16">
+                            Git & GitHub Actions
+                        </li>
 
-                            <li data-i18n="skill14">
-                                Postman
-                            </li>
+                        <li data-i18n="skill17">
+                            Test automation
+                        </li>
 
-                            <li data-i18n="skill15">
-                                k6 performance testing
-                            </li>
+                    </ul>
 
-                            <li data-i18n="skill16">
-                                Git & GitHub Actions
-                            </li>
-
-                            <li data-i18n="skill17">
-                                Test automation
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-                </div>
+                </article>
 
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
-        <!-- ========================================
-             STRENGTHS / COMPETENCIES
-        ========================================= -->
+    <section
+        id="competencies"
+        class="content-section"
+    >
 
-        <section
-            id="competencies"
-            class="content-section"
-        >
+        <div class="container">
 
-            <div class="container">
+            <h2 data-i18n="competenciesTitle">
+                Strengths
+            </h2>
 
-                <h2 data-i18n="competenciesTitle">
-                    Strengths
-                </h2>
+            <div class="competencies-content">
 
-                <div class="competencies-content">
-
-                    <p data-i18n="competenciesText">
-                        Problem solving, analytical thinking, clear
-                        communication, patience, organisation, teamwork,
-                        adaptability, responsibility and a strong
-                        customer-focused approach.
-                    </p>
-
-                </div>
+                <p data-i18n="competenciesText">
+                    Problem solving, analytical thinking, clear
+                    communication, patience, organisation, teamwork,
+                    adaptability, responsibility and a strong
+                    customer-focused approach.
+                </p>
 
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
-        <!-- ========================================
-             EXPERIENCE
-        ========================================= -->
+    <section
+        id="experience"
+        class="content-section"
+    >
 
-        <section
-            id="experience"
-            class="content-section"
-        >
+        <div class="container">
 
-            <div class="container">
+            <h2 data-i18n="experienceTitle">
+                Experience
+            </h2>
 
-                <h2 data-i18n="experienceTitle">
-                    Experience
-                </h2>
+            <div class="experience-list">
 
-                <div class="experience-list">
+                <article class="experience-card">
 
+                    <div class="experience-header">
 
-                    <!-- ICT Administrator -->
+                        <div>
 
-                    <article class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3 data-i18n="experience1Title">
-                                    ICT Administrator – Wereldwijs Basisschool Rotterdam
-                                </h3>
-
-                            </div>
-
-                            <div class="experience-date">
-
-                                <span data-i18n="experience1Date">
-                                    April 2024 – Present
-                                </span>
-
-                            </div>
+                            <h3 data-i18n="experience1Title">
+                                ICT Administrator – Wereldwijs Basisschool Rotterdam
+                            </h3>
 
                         </div>
 
-                        <ul>
+                        <div class="experience-date">
 
-                            <li data-i18n="experience1Bullet1">
-                                Provide day-to-day ICT support to staff and
-                                students.
-                            </li>
-
-                            <li data-i18n="experience1Bullet2">
-                                Prepare, configure and maintain computers,
-                                laptops and other devices.
-                            </li>
-
-                            <li data-i18n="experience1Bullet3">
-                                Troubleshoot hardware, software, network and
-                                user-access issues.
-                            </li>
-
-                            <li data-i18n="experience1Bullet4">
-                                Support Microsoft 365 and school ICT systems.
-                            </li>
-
-                            <li data-i18n="experience1Bullet5">
-                                Coordinate ICT-related activities and help
-                                improve digital workflows.
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-                    <!-- Software Tester -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3 data-i18n="experience2Title">
-                                    Software Tester – Motopp – Amsterdam
-                                </h3>
-
-                            </div>
-
-                            <div class="experience-date">
-
-                                <span data-i18n="experience2Date">
-                                    2026
-                                </span>
-
-                            </div>
+                            <span data-i18n="experience1Date">
+                                April 2024 – Present
+                            </span>
 
                         </div>
 
-                        <ul>
+                    </div>
 
-                            <li data-i18n="experience2Bullet1">
-                                Designed and executed automated API tests
-                                using Playwright.
-                            </li>
+                    <ul>
 
-                            <li data-i18n="experience2Bullet2">
-                                Created end-to-end and functional test
-                                scenarios for application features.
-                            </li>
+                        <li data-i18n="experience1Bullet1">
+                            Provide day-to-day ICT support to staff and
+                            students.
+                        </li>
 
-                            <li data-i18n="experience2Bullet3">
-                                Tested authentication, RBAC, security,
-                                privacy and request workflows.
-                            </li>
+                        <li data-i18n="experience1Bullet2">
+                            Prepare, configure and maintain computers,
+                            laptops and other devices.
+                        </li>
 
-                            <li data-i18n="experience2Bullet4">
-                                Worked with Swagger / OpenAPI, Postman,
-                                Git and GitHub Actions.
-                            </li>
+                        <li data-i18n="experience1Bullet3">
+                            Troubleshoot hardware, software, network and
+                            user-access issues.
+                        </li>
 
-                            <li data-i18n="experience2Bullet5">
-                                Performed performance testing with k6 and
-                                integrated automated tests into CI.
-                            </li>
+                        <li data-i18n="experience1Bullet4">
+                            Support Microsoft 365 and school ICT systems.
+                        </li>
 
-                        </ul>
+                        <li data-i18n="experience1Bullet5">
+                            Coordinate ICT-related activities and help
+                            improve digital workflows.
+                        </li>
 
-                    </article>
+                    </ul>
 
+                </article>
 
-                    <!-- Volunteer Python Instructor -->
+                <article class="experience-card">
 
-                    <article class="experience-card">
+                    <div class="experience-header">
 
-                        <div class="experience-header">
+                        <div>
 
-                            <div>
-
-                                <h3 data-i18n="experience3Title">
-                                    Volunteer Python Instructor – AZC Echt
-                                </h3>
-
-                            </div>
-
-                            <div class="experience-date">
-
-                                <span data-i18n="experience3Date">
-                                    April 2023
-                                </span>
-
-                            </div>
+                            <h3 data-i18n="experience2Title">
+                                Software Tester – Motopp – Amsterdam
+                            </h3>
 
                         </div>
 
-                        <ul>
+                        <div class="experience-date">
 
-                            <li data-i18n="experience3Bullet1">
-                                Introduced learners to programming and Python.
-                            </li>
-
-                            <li data-i18n="experience3Bullet2">
-                                Prepared practical exercises and learning
-                                activities.
-                            </li>
-
-                            <li data-i18n="experience3Bullet3">
-                                Supported learners with different technical
-                                backgrounds and learning needs.
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-                    <!-- ICT Teacher -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-header">
-
-                            <div>
-
-                                <h3 data-i18n="experience4Title">
-                                    ICT Teacher – Huda Integrated School
-                                </h3>
-
-                            </div>
-
-                            <div class="experience-date">
-
-                                <span data-i18n="experience4Date">
-                                    January 2016 – January 2022
-                                </span>
-
-                            </div>
+                            <span data-i18n="experience2Date">
+                                2026
+                            </span>
 
                         </div>
 
-                        <ul>
+                    </div>
 
-                            <li data-i18n="experience4Bullet1">
-                                Taught ICT and digital skills to students.
-                            </li>
+                    <ul>
 
-                            <li data-i18n="experience4Bullet2">
-                                Managed and supported classroom technology
-                                and digital learning environments.
-                            </li>
+                        <li data-i18n="experience2Bullet1">
+                            Designed and executed automated API tests
+                            using Playwright.
+                        </li>
 
-                            <li data-i18n="experience4Bullet3">
-                                Supported teachers and students with
-                                technology-related issues.
-                            </li>
+                        <li data-i18n="experience2Bullet2">
+                            Created end-to-end and functional test
+                            scenarios for application features.
+                        </li>
 
-                            <li data-i18n="experience4Bullet4">
-                                Contributed to the planning and implementation
-                                of digital education initiatives.
-                            </li>
+                        <li data-i18n="experience2Bullet3">
+                            Tested authentication, RBAC, security,
+                            privacy and request workflows.
+                        </li>
 
-                        </ul>
+                        <li data-i18n="experience2Bullet4">
+                            Worked with Swagger / OpenAPI, Postman,
+                            Git and GitHub Actions.
+                        </li>
 
-                    </article>
+                        <li data-i18n="experience2Bullet5">
+                            Performed performance testing with k6 and
+                            integrated automated tests into CI.
+                        </li>
 
+                    </ul>
 
-                    <!-- Additional Experience -->
+                </article>
 
-                    <div class="experience-additional">
+                <article class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3 data-i18n="experience3Title">
+                                Volunteer Python Instructor – AZC Echt
+                            </h3>
+
+                        </div>
+
+                        <div class="experience-date">
+
+                            <span data-i18n="experience3Date">
+                                April 2023
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <ul>
+
+                        <li data-i18n="experience3Bullet1">
+                            Introduced learners to programming and Python.
+                        </li>
+
+                        <li data-i18n="experience3Bullet2">
+                            Prepared practical exercises and learning
+                            activities.
+                        </li>
+
+                        <li data-i18n="experience3Bullet3">
+                            Supported learners with different technical
+                            backgrounds and learning needs.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <article class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <h3 data-i18n="experience4Title">
+                                ICT Teacher – Huda Integrated School
+                            </h3>
+
+                        </div>
+
+                        <div class="experience-date">
+
+                            <span data-i18n="experience4Date">
+                                January 2016 – January 2022
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <ul>
+
+                        <li data-i18n="experience4Bullet1">
+                            Taught ICT and digital skills to students.
+                        </li>
+
+                        <li data-i18n="experience4Bullet2">
+                            Managed and supported classroom technology
+                            and digital learning environments.
+                        </li>
+
+                        <li data-i18n="experience4Bullet3">
+                            Supported teachers and students with
+                            technology-related issues.
+                        </li>
+
+                        <li data-i18n="experience4Bullet4">
+                            Contributed to the planning and implementation
+                            of digital education initiatives.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <div class="experience-additional">
+
+                    <div class="experience-additional-header">
 
                         <h4 data-i18n="additionalExperienceTitle">
                             Earlier Professional Experience
                         </h4>
 
-                        <ul>
-
-                            <li data-i18n="additionalExperience1">
-                                Extensive experience in education and school
-                                management.
-                            </li>
-
-                            <li data-i18n="additionalExperience2">
-                                Progressed through roles including Teacher,
-                                Head of Department, Deputy Headmaster and
-                                School Headmaster.
-                            </li>
-
-                            <li data-i18n="additionalExperience3">
-                                Developed strong leadership, organisation,
-                                communication and team-management skills.
-                            </li>
-
-                        </ul>
+                        <span
+                            class="experience-date"
+                            data-i18n="additionalExperienceDate"
+                        >
+                            1996 – 2016
+                        </span>
 
                     </div>
+
+                    <ul>
+
+                        <li data-i18n="additionalExperience1">
+                            Extensive experience in education and school management.
+                        </li>
+
+                        <li data-i18n="additionalExperience2">
+                            Progressed through roles including Teacher,
+                            Head of Department, Deputy Headmaster and
+                            School Headmaster.
+                        </li>
+
+                        <li data-i18n="additionalExperience3">
+                            Developed strong leadership, organisation,
+                            communication and team-management skills.
+                        </li>
+
+                    </ul>
 
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- ========================================
-             EDUCATION
-        ========================================= -->
-
-        <section
-            id="education"
-            class="content-section"
-        >
-
-            <div class="container">
-
-                <h2 data-i18n="educationTitle">
-                    Education
-                </h2>
-
-                <div class="education-grid">
-
-
-                    <article class="education-card">
-
-                        <h3 data-i18n="education1Title">
-                            IT Traineeship
-                        </h3>
-
-                        <p
-                            class="education-institution"
-                            data-i18n="education1Institution"
-                        >
-                            Motopp – Amsterdam
-                        </p>
-
-                        <p class="education-status">
-                            <span data-i18n="education1Status">
-                                Completed
-                            </span>
-                        </p>
-
-                    </article>
-
-
-                    <article class="education-card">
-
-                        <h3 data-i18n="education2Title">
-                            Associate Degree – Computer Science
-                        </h3>
-
-                        <p
-                            class="education-institution"
-                            data-i18n="education2Institution"
-                        >
-                            University of the People
-                        </p>
-
-                        <p
-                            class="education-location"
-                            data-i18n="education2Location"
-                        >
-                            California, USA
-                        </p>
-
-                    </article>
-
-
-                    <article class="education-card">
-
-                        <h3 data-i18n="education3Title">
-                            Master of Arts – Education, Innovation in Learning and Teaching
-                        </h3>
-
-                        <p
-                            class="education-institution"
-                            data-i18n="education3Institution"
-                        >
-                            University of South Wales
-                        </p>
-
-                        <p
-                            class="education-location"
-                            data-i18n="education3Location"
-                        >
-                            Cardiff, UK
-                        </p>
-
-                    </article>
-
-
-                    <article class="education-card">
-
-                        <h3 data-i18n="education4Title">
-                            Bachelor’s Degree – Primary Education
-                        </h3>
-
-                        <p
-                            class="education-institution"
-                            data-i18n="education4Institution"
-                        >
-                            Çanakkale Onsekiz Mart University
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             COURSES & CERTIFICATIONS
-        ========================================= -->
-
-        <section
-            id="courses"
-            class="content-section"
-        >
-
-            <div class="container">
-
-                <h2 data-i18n="coursesTitle">
-                    Courses & Certifications
-                </h2>
-
-                <div class="courses-grid">
-
-
-                    <article class="course-card">
-
-                        <h3 data-i18n="courseCard1Title">
-                            IT Support & Productivity
-                        </h3>
-
-                        <ul>
-
-                            <li data-i18n="course1">
-                                Google IT Support Professional Certificate
-                                – Coursera
-                            </li>
-
-                            <li data-i18n="course2">
-                                Microsoft 365
-                            </li>
-
-                            <li data-i18n="course3">
-                                Jira
-                            </li>
-
-                            <li data-i18n="course4">
-                                Agile & Scrum
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-
-                    <article class="course-card">
-
-                        <h3 data-i18n="courseCard2Title">
-                            Software Testing & Development
-                        </h3>
-
-                        <ul>
-
-                            <li data-i18n="course5">
-                                Playwright
-                            </li>
-
-                            <li data-i18n="course6">
-                                Postman
-                            </li>
-
-                            <li data-i18n="course7">
-                                Git & GitHub
-                            </li>
-
-                            <li data-i18n="course8">
-                                API Testing
-                            </li>
-
-                        </ul>
-
-                    </article>
-
-                </div>
-
-
-                <div class="continuous-learning">
-
-                    <h3 data-i18n="continuousLearningTitle">
-                        Continuous Learning
-                    </h3>
-
-                    <p data-i18n="continuousLearningText">
-                        Currently developing my knowledge of Microsoft Intune
-                        and planning further Microsoft 365 E5 training to
-                        strengthen my skills in modern workplace and device
-                        management.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             LANGUAGES
-        ========================================= -->
-
-        <section
-            id="languages"
-            class="content-section"
-        >
-
-            <div class="container">
-
-                <h2 data-i18n="languagesTitle">
-                    Languages
-                </h2>
-
-                <div class="languages-grid">
-
-
-                    <article class="language-card">
-
-                        <h3 data-i18n="language1Name">
-                            Dutch
-                        </h3>
-
-                        <p data-i18n="language1Level">
-                            B1+
-                        </p>
-
-                    </article>
-
-
-                    <article class="language-card">
-
-                        <h3 data-i18n="language2Name">
-                            English
-                        </h3>
-
-                        <p data-i18n="language2Level">
-                            Fluent
-                        </p>
-
-                    </article>
-
-
-                    <article class="language-card">
-
-                        <h3 data-i18n="language3Name">
-                            Russian
-                        </h3>
-
-                        <p data-i18n="language3Level">
-                            Fluent
-                        </p>
-
-                    </article>
-
-
-                    <article class="language-card">
-
-                        <h3 data-i18n="language4Name">
-                            Turkish
-                        </h3>
-
-                        <p data-i18n="language4Level">
-                            Native
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             HOBBIES
-        ========================================= -->
-
-        <section
-            id="other"
-            class="content-section"
-        >
-
-            <div class="container">
-
-                <h2 data-i18n="hobbiesTitle">
-                    Hobbies & Interests
-                </h2>
-
-                <div class="hobbies-grid">
-
-                    <div
-                        class="hobby-item"
-                        data-i18n="hobby1"
-                    >
-                        Technology
-                    </div>
-
-                    <div
-                        class="hobby-item"
-                        data-i18n="hobby2"
-                    >
-                        Programming
-                    </div>
-
-                    <div
-                        class="hobby-item"
-                        data-i18n="hobby3"
-                    >
-                        Learning
-                    </div>
-
-                    <div
-                        class="hobby-item"
-                        data-i18n="hobby4"
-                    >
-                        Education
-                    </div>
-
-                    <div
-                        class="hobby-item"
-                        data-i18n="hobby5"
-                    >
-                        Problem Solving
-                    </div>
-
-                    <div
-                        class="hobby-item"
-                        data-i18n="hobby6"
-                    >
-                        Digital Technologies
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             CONTACT
-        ========================================= -->
-
-        <section
-            id="contact"
-            class="content-section contact-section"
-        >
-
-            <div class="container">
-
-                <h2 data-i18n="contactTitle">
-                    Contact
-                </h2>
-
-                <div class="contact-grid">
-
-
-                    <!-- WhatsApp / Phone -->
-
-                    <a
-                        class="contact-card"
-                        href="https://wa.me/31644955335"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Contact Zeki Tazegul on WhatsApp"
-                    >
-
-                        <span
-                            class="contact-icon"
-                            aria-hidden="true"
-                        >
-                            
-                        </span>
-
-                        <span
-                            class="contact-label"
-                            data-i18n="whatsappLabel"
-                        >
-                            WhatsApp
-                        </span>
-
-                        <span class="contact-value">
-                            +31 6 44955335
-                        </span>
-
-                    </a>
-
-
-                    <!-- Email -->
-
-                    <a
-                        class="contact-card"
-                        href="mailto:zekitazegul@gmail.com"
-                        aria-label="Send an email to Zeki Tazegul"
-                    >
-
-                        <span
-                            class="contact-icon"
-                            aria-hidden="true"
-                        >
-                            
-                        </span>
-
-                        <span
-                            class="contact-label"
-                            data-i18n="emailLabel"
-                        >
-                            Email
-                        </span>
-
-                        <span class="contact-value">
-                            zekitazegul@gmail.com
-                        </span>
-
-                    </a>
-
-
-                    <!-- LinkedIn -->
-
-                    <a
-                        class="contact-card"
-                        href="https://www.linkedin.com/in/zeki-tazegul/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="View Zeki Tazegul's LinkedIn profile"
-                    >
-
-                        <span
-                            class="contact-icon"
-                            aria-hidden="true"
-                        >
-                        
-                        </span>
-
-                        <span
-                            class="contact-label"
-                            data-i18n="linkedinLabel"
-                        >
-                            LinkedIn
-                        </span>
-
-                        <span class="contact-value">
-                            linkedin.com/in/zeki-tazegul
-                        </span>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ========================================
-         FOOTER
-    ========================================= -->
-
-    <footer class="site-footer">
-
-        <div class="container">
-
-            <p data-i18n="footerText">
-                © 2026 Zeki Tazegul. All rights reserved.
-            </p>
 
         </div>
 
-    </footer>
+    </section>
 
+    <section
+        id="education"
+        class="content-section"
+    >
 
-    <!-- ========================================
-         JAVASCRIPT
-    ========================================= -->
+        <div class="container">
 
-    <script src="script.js"></script>
+            <h2 data-i18n="educationTitle">
+                Education
+            </h2>
+
+            <div class="education-grid">
+
+                <article class="education-card">
+
+                    <h3 data-i18n="education1Title">
+                        IT Traineeship
+                    </h3>
+
+                    <p
+                        class="education-institution"
+                        data-i18n="education1Institution"
+                    >
+                        Motopp – Amsterdam
+                    </p>
+
+                    <p class="education-status">
+                        <span data-i18n="education1Status">
+                            Completed
+                        </span>
+                    </p>
+
+                </article>
+
+                <article class="education-card">
+
+                    <h3 data-i18n="education2Title">
+                        Associate Degree – Computer Science
+                    </h3>
+
+                    <p
+                        class="education-institution"
+                        data-i18n="education2Institution"
+                    >
+                        University of the People
+                    </p>
+
+                    <p
+                        class="education-location"
+                        data-i18n="education2Location"
+                    >
+                        California, USA
+                    </p>
+
+                </article>
+
+                <article class="education-card">
+
+                    <h3 data-i18n="education3Title">
+                        Master of Arts – Education, Innovation in Learning and Teaching
+                    </h3>
+
+                    <p
+                        class="education-institution"
+                        data-i18n="education3Institution"
+                    >
+                        University of South Wales
+                    </p>
+
+                    <p
+                        class="education-location"
+                        data-i18n="education3Location"
+                    >
+                        Cardiff, UK
+                    </p>
+
+                </article>
+
+                <article class="education-card">
+
+                    <h3 data-i18n="education4Title">
+                        Bachelor’s Degree – Primary Education
+                    </h3>
+
+                    <p
+                        class="education-institution"
+                        data-i18n="education4Institution"
+                    >
+                        Çanakkale Onsekiz Mart University
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+        id="courses"
+        class="content-section"
+    >
+
+        <div class="container">
+
+            <h2 data-i18n="coursesTitle">
+                Courses & Certifications
+            </h2>
+
+            <div class="courses-grid">
+
+                <article class="course-card">
+
+                    <h3 data-i18n="courseCard1Title">
+                        IT Support & Productivity
+                    </h3>
+
+                    <ul>
+
+                        <li data-i18n="course1">
+                            Google IT Support Professional Certificate
+                            – Coursera
+                        </li>
+
+                        <li data-i18n="course2">
+                            Microsoft 365
+                        </li>
+
+                        <li data-i18n="course3">
+                            Jira
+                        </li>
+
+                        <li data-i18n="course4">
+                            Agile & Scrum
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <article class="course-card">
+
+                    <h3 data-i18n="courseCard2Title">
+                        Software Testing & Development
+                    </h3>
+
+                    <ul>
+
+                        <li data-i18n="course5">
+                            Playwright
+                        </li>
+
+                        <li data-i18n="course6">
+                            Postman
+                        </li>
+
+                        <li data-i18n="course7">
+                            Git & GitHub
+                        </li>
+
+                        <li data-i18n="course8">
+                            API Testing
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+            <div class="continuous-learning">
+
+                <h3 data-i18n="continuousLearningTitle">
+                    Continuous Learning
+                </h3>
+
+                <p data-i18n="continuousLearningText">
+                    Currently developing my knowledge of Microsoft Intune
+                    and planning further Microsoft 365 E5 training to
+                    strengthen my skills in modern workplace and device
+                    management.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section
+        id="languages"
+        class="content-section"
+    >
+
+        <div class="container">
+
+            <h2 data-i18n="languagesTitle">
+                Languages
+            </h2>
+
+            <ul class="languages-list">
+
+                <li>
+
+                    <span
+                        class="language-name"
+                        data-i18n="language1Name"
+                    >
+                        Dutch
+                    </span>
+
+                    <span
+                        class="language-level"
+                        data-i18n="language1Level"
+                    >
+                        B1+
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <span
+                        class="language-name"
+                        data-i18n="language2Name"
+                    >
+                        English
+                    </span>
+
+                    <span
+                        class="language-level"
+                        data-i18n="language2Level"
+                    >
+                        Fluent
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <span
+                        class="language-name"
+                        data-i18n="language3Name"
+                    >
+                        Russian
+                    </span>
+
+                    <span
+                        class="language-level"
+                        data-i18n="language3Level"
+                    >
+                        Fluent
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <span
+                        class="language-name"
+                        data-i18n="language4Name"
+                    >
+                        Turkish
+                    </span>
+
+                    <span
+                        class="language-level"
+                        data-i18n="language4Level"
+                    >
+                        Native
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section
+        id="other"
+        class="content-section"
+    >
+
+        <div class="container">
+
+            <h2 data-i18n="hobbiesTitle">
+                Hobbies & Interests
+            </h2>
+
+            <ul class="hobbies-list">
+
+                <li data-i18n="hobby1">
+                    Chess
+                </li>
+
+                <li data-i18n="hobby2">
+                    Badminton
+                </li>
+
+                <li data-i18n="hobby3">
+                    Woodworking
+                </li>
+
+                <li data-i18n="hobby4">
+                    Following technology trends
+                </li>
+
+                <li data-i18n="hobby5">
+                    Nature walks and outdoor activities
+                </li>
+
+                <li data-i18n="hobby6">
+                    Learning new things and developing skills
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section
+        id="contact"
+        class="content-section contact-section"
+    >
+
+        <div class="container">
+
+            <h2 data-i18n="contactTitle">
+                Contact
+            </h2>
+
+            <div class="contact-grid">
+
+                <a
+                    class="contact-card"
+                    href="https://wa.me/31644955335"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contact Zeki Tazegul on WhatsApp"
+                >
+
+                    <span
+                        class="contact-icon"
+                        aria-hidden="true"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+
+                            <path
+                                d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0
+                                C5.52 0 .19 5.33.19 11.88c0 2.09.55 4.13
+                                1.6 5.93L.1 24l6.33-1.66a11.9 11.9 0 0 0
+                                5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.88
+                                0-3.18-1.24-6.17-3.44-8.41ZM12.08 21.75
+                                c-1.76 0-3.49-.47-5-1.36l-.36-.21-3.76.99
+                                1-3.66-.23-.38a9.85 9.85 0 0 1-1.51-5.25
+                                c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12
+                                1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7
+                                c0 5.44-4.43 9.87-9.89 9.87Zm5.42-7.4
+                                c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15
+                                -.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07
+                                -.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77
+                                -1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35
+                                .45-.52.15-.17.2-.3.2-.5.1-.2.05-.37-.02-.52
+                                -.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51
+                                h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04
+                                2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.08
+                                4.5.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12
+                                .57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42
+                                -.07-.12-.27-.2-.57-.35Z"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <span
+                        class="contact-label"
+                        data-i18n="whatsappLabel"
+                    >
+                        WhatsApp
+                    </span>
+
+                    <span class="contact-value">
+                        +31 6 44955335
+                    </span>
+
+                </a>
+
+                <a
+                    class="contact-card"
+                    href="mailto:zekitazegul@gmail.com"
+                    aria-label="Send an email to Zeki Tazegul"
+                >
+
+                    <span
+                        class="contact-icon"
+                        aria-hidden="true"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+
+                            <path
+                                d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3
+                                a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 6
+                                9-6V7H3Zm18 10V9.9l-8.45 5.63a1 1 0 0 1-1.1
+                                0L3 9.9V17h18Z"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <span
+                        class="contact-label"
+                        data-i18n="emailLabel"
+                    >
+                        Email
+                    </span>
+
+                    <span class="contact-value">
+                        zekitazegul@gmail.com
+                    </span>
+
+                </a>
+
+                <a
+                    class="contact-card"
+                    href="https://www.linkedin.com/in/zeki-tazegul/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Zeki Tazegul's LinkedIn profile"
+                >
+
+                    <span
+                        class="contact-icon"
+                        aria-hidden="true"
+                    >
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+
+                            <path
+                                d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04
+                                -1.85 0-2.13 1.44-2.13 2.94v5.68H9.35V8.99h3.42v1.56h.05
+                                c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26
+                                5.46v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12
+                                2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.57V8.99H3.56v11.46ZM22.22
+                                0H1.78C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.78
+                                24h20.44c.98 0 1.78-.78 1.78-1.74V1.74C24 .78
+                                23.2 0 22.22 0Z"
+                            />
+
+                        </svg>
+
+                    </span>
+
+                    <span
+                        class="contact-label"
+                        data-i18n="linkedinLabel"
+                    >
+                        LinkedIn
+                    </span>
+
+                    <span class="contact-value">
+                        linkedin.com/in/zeki-tazegul
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <p data-i18n="footerText">
+            © 2026 Zeki Tazegul. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
