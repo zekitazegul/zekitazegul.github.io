@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Kur’an · Destek / Support</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f8f4eb;color:#183e35;font:18px/1.65 system-ui,sans-serif;padding:24px}main{max-width:580px;margin:40px auto;background:white;border-radius:24px;padding:32px;box-shadow:0 12px 45px #163e3510}header{display:flex;justify-content:space-between;align-items:center;gap:16px}select{font:inherit;padding:8px;border:1px solid #b6c5be;border-radius:10px;background:white}h1{line-height:1.25;font-size:30px}.coffee{font-size:52px;margin:24px 0 0}a.button{display:block;text-align:center;background:#164d43;color:white;padding:14px;border-radius:14px;text-decoration:none;font-weight:700;margin:24px 0}a.button:hover{background:#0a342d}a:focus-visible,select:focus-visible{outline:3px solid #b68b36;outline-offset:4px}.muted{color:#626d65;font-size:15px}[hidden]{display:none!important}.notice{background:#fff3d5;padding:16px;border-radius:12px}footer{margin-top:30px;border-top:1px solid #e8e8df;padding-top:16px;font-size:14px}@media(max-width:420px){body{padding:12px}main{margin:12px auto;padding:22px}}
+</style>
+</head>
+<body>
+<main>
+<header><strong>Kur’an-ı Kerim</strong><select id="language" aria-label="Language"><option value="tr">Türkçe</option><option value="en">English</option><option value="nl">Nederlands</option></select></header>
+<p class="coffee" aria-hidden="true">☕</p>
+<h1 id="heading"></h1><p id="intro"></p>
+<p id="valid" class="muted"></p>
+<a id="pay" class="button" hidden href="https://tikkie.me/pay/qp5ddh9l8i6gg1dq6bc0" rel="noreferrer"></a>
+<p id="expired" class="notice" hidden></p>
+<p id="how" class="muted"></p><p id="privacy" class="muted"></p>
+<noscript><p>Türkçe: Tikkie bağlantısı 27 Ekim 2026’ya kadar geçerlidir. / English: The Tikkie link is valid until 27 October 2026. / Nederlands: De Tikkie-link is geldig tot en met 27 oktober 2026. JavaScript is nodig om de actuele betaaloptie te tonen.</p></noscript>
+<footer>Zeki Tazegul · <span id="free"></span></footer>
+</main>
+<script>
+const text={
+tr:{heading:'Bir kahveyle destek ol',intro:'Kur’an uygulamasını faydalı buluyorsan bir kahveyle geliştirilmesine destek olabilirsin. Destek tamamen isteğe bağlıdır.',valid:'Bu Tikkie bağlantısı 27 Ekim 2026’ya kadar geçerlidir.',pay:'Tikkie ile destek ol',expired:'Bu ödeme bağlantısının süresi doldu. Yeni bağlantı henüz eklenmedi; lütfen daha sonra tekrar bak.',how:'Tikkie ödeme sayfasında tutarı ve alıcıyı kontrol et. Banka uygulamasına geçiş, cihazına ve seçtiğin ödeme yöntemine bağlıdır.',privacy:'Ödeme Tikkie üzerinden yapılır. Bu sayfa kart veya banka bilgilerini toplamaz.',free:'Tüm okuma özellikleri ücretsizdir.'},
+en:{heading:'Buy a coffee',intro:'If you find the Quran app useful, you can support its development with a coffee. Support is entirely optional.',valid:'This Tikkie link is valid until 27 October 2026.',pay:'Support via Tikkie',expired:'This payment link has expired. A replacement is not available yet; please check back later.',how:'Check the amount and recipient on the Tikkie payment page. Opening your bank app depends on your device and chosen payment method.',privacy:'Payment is handled by Tikkie. This page does not collect card or bank details.',free:'All reading features are free.'},
+nl:{heading:'Trakteer op een kopje koffie',intro:'Vind je de Koran-app nuttig? Met een kopje koffie kun je de verdere ontwikkeling steunen. Steun is geheel vrijwillig.',valid:'Deze Tikkie-link is geldig tot en met 27 oktober 2026.',pay:'Steun via Tikkie',expired:'Deze betaallink is verlopen. Er is nog geen nieuwe link beschikbaar; kijk later nog eens.',how:'Controleer het bedrag en de ontvanger op de Tikkie-betaalpagina. Of je bankapp opent, hangt af van je apparaat en gekozen betaalmethode.',privacy:'De betaling verloopt via Tikkie. Deze pagina verzamelt geen kaart- of bankgegevens.',free:'Alle leesfuncties zijn gratis.'}
+};
+const selector=document.getElementById('language');
+const requested=new URLSearchParams(location.search).get('lang')||navigator.language.slice(0,2);
+selector.value=Object.hasOwn(text,requested)?requested:'en';
+function render(){
+ const language=selector.value;document.documentElement.lang=language;
+ for(const [key,value] of Object.entries(text[language]))document.getElementById(key).textContent=value;
+ const today=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Amsterdam',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+ const expired=today>'2026-10-27';
+ document.getElementById('pay').hidden=expired;
+ document.getElementById('expired').hidden=!expired;
+}
+selector.addEventListener('change',render);render();
+</script>
+</body>
+</html>
