@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="light">
 <title>Kur’an · Destek / Support</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f8f4eb;color:#183e35;font:18px/1.65 system-ui,sans-serif;padding:24px}main{max-width:580px;margin:40px auto;background:white;border-radius:24px;padding:32px;box-shadow:0 12px 45px #163e3510}header{display:flex;justify-content:space-between;align-items:center;gap:16px}select{font:inherit;padding:8px;border:1px solid #b6c5be;border-radius:10px;background:white}h1{line-height:1.25;font-size:30px}.coffee{font-size:52px;margin:24px 0 0}a.button{display:block;text-align:center;background:#164d43;color:white;padding:14px;border-radius:14px;text-decoration:none;font-weight:700;margin:24px 0}a.button:hover{background:#0a342d}a:focus-visible,select:focus-visible{outline:3px solid #b68b36;outline-offset:4px}.muted{color:#626d65;font-size:15px}[hidden]{display:none!important}.notice{background:#fff3d5;padding:16px;border-radius:12px}textarea,input{width:100%;font:inherit;padding:12px;border:1px solid #b6c5be;border-radius:10px}textarea{min-height:150px;resize:vertical}label{display:block;margin-top:14px}button{font:inherit;border:0;cursor:pointer;background:#164d43;color:white;padding:12px 18px;border-radius:12px;margin-top:16px}section{scroll-margin-top:24px;border-top:1px solid #e8e8df;margin-top:28px;padding-top:20px}footer{margin-top:30px;border-top:1px solid #e8e8df;padding-top:16px;font-size:14px}@media(max-width:420px){body{padding:12px}main{margin:12px auto;padding:22px}}
+*{box-sizing:border-box}body{margin:0;background:#f8f4eb;color:#183e35;font:18px/1.65 system-ui,sans-serif;padding:24px}main{max-width:580px;margin:40px auto;background:white;border-radius:24px;padding:32px;box-shadow:0 12px 45px #163e3510}header{display:flex;justify-content:space-between;align-items:center;gap:16px}select{font:inherit;padding:8px;border:1px solid #b6c5be;border-radius:10px;background:white}h1{line-height:1.25;font-size:30px}.coffee{font-size:52px;margin:24px 0 0}a.button{display:block;text-align:center;background:#164d43;color:white;padding:14px;border-radius:14px;text-decoration:none;font-weight:700;margin:24px 0}a.button:hover{background:#0a342d}a:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid #b68b36;outline-offset:4px}.muted{color:#626d65;font-size:15px}[hidden]{display:none!important}.notice{background:#fff3d5;padding:16px;border-radius:12px}textarea,input{width:100%;font:inherit;padding:12px;border:1px solid #b6c5be;border-radius:10px}textarea{min-height:150px;resize:vertical}label{display:block;margin-top:14px}button{font:inherit;border:0;cursor:pointer;background:#164d43;color:white;padding:12px 18px;border-radius:12px;margin-top:16px}section{scroll-margin-top:24px;border-top:1px solid #e8e8df;margin-top:28px;padding-top:20px}footer{margin-top:30px;border-top:1px solid #e8e8df;padding-top:16px;font-size:14px}@media(max-width:420px){body{padding:12px}main{margin:12px auto;padding:22px}}
 </style>
 </head>
 <body>
@@ -20,8 +20,15 @@
 <p id="how" class="muted"></p><p id="privacy" class="muted"></p>
 <section id="feedback">
 <h2 id="feedbackTitle"></h2><p id="feedbackIntro"></p>
-<p id="feedbackNotice" class="notice"></p>
-<a id="feedbackOpen" class="button" hidden rel="noreferrer"></a>
+<form id="feedbackForm">
+<label for="kind" id="kindLabel"></label>
+<select id="kind"><option value="thanks" id="thanks"></option><option value="idea" id="idea"></option><option value="bug" id="bug"></option></select>
+<label for="message" id="messageLabel"></label>
+<textarea id="message" required maxlength="4000" aria-describedby="mailHelp"></textarea>
+<button id="send" type="submit"></button>
+<p id="mailHelp" class="muted"></p>
+<a href="mailto:ztazegul@yahoo.com">ztazegul@yahoo.com</a>
+</form>
 </section>
 <noscript><p>Türkçe: Tikkie bağlantısı 27 Ekim 2026’ya kadar geçerlidir. / English: The Tikkie link is valid until 27 October 2026. / Nederlands: De Tikkie-link is geldig tot en met 27 oktober 2026. JavaScript is nodig om de actuele betaaloptie te tonen.</p></noscript>
 <footer>Zeki Tazegul · <span id="free"></span></footer>
@@ -32,12 +39,10 @@ tr:{heading:'Bir kahveyle destek ol',intro:'Kur’an uygulamasını faydalı bul
 en:{heading:'Buy a coffee',intro:'If you find the Quran app useful, you can support its development with a coffee. Support is entirely optional.',valid:'This Tikkie link is valid until 27 October 2026.',pay:'Support via Tikkie',expired:'This payment link has expired. A replacement is not available yet; please check back later.',how:'Check the amount and recipient on the Tikkie payment page. Opening your bank app depends on your device and chosen payment method.',privacy:'Payment is handled by Tikkie. This page does not collect card or bank details.',free:'All reading features are free.'},
 nl:{heading:'Trakteer op een kopje koffie',intro:'Vind je de Koran-app nuttig? Met een kopje koffie kun je de verdere ontwikkeling steunen. Steun is geheel vrijwillig.',valid:'Deze Tikkie-link is geldig tot en met 27 oktober 2026.',pay:'Steun via Tikkie',expired:'Deze betaallink is verlopen. Er is nog geen nieuwe link beschikbaar; kijk later nog eens.',how:'Controleer het bedrag en de ontvanger op de Tikkie-betaalpagina. Of je bankapp opent, hangt af van je apparaat en gekozen betaalmethode.',privacy:'De betaling verloopt via Tikkie. Deze pagina verzamelt geen kaart- of bankgegevens.',free:'Alle leesfuncties zijn gratis.'}
 };
-// Add a public, no-sign-in feedback form URL here after it is supplied.
-const feedbackUrl='';
 const feedbackText={
-tr:{feedbackTitle:'Birlikte güzelleştirelim',feedbackIntro:'Bir teşekkür, geliştirme önerisi veya hata bildirimi paylaşabilirsin. Kahve ikramı zorunlu değil; mesajın tek başına da değerli.',feedbackNotice:'Hesap gerektirmeyen geri bildirim formu hazırlanıyor. Henüz mesaj gönderilemiyor.',feedbackOpen:'Fikrini paylaş'},
-en:{feedbackTitle:'Make it better together',feedbackIntro:'Share a thank-you, an idea or a bug report. A coffee is optional; your message alone is appreciated.',feedbackNotice:'A feedback form that does not require an account is being prepared. Messages cannot be sent yet.',feedbackOpen:'Share your thoughts'},
-nl:{feedbackTitle:'Samen maken we het mooier',feedbackIntro:'Deel een bedankje, een idee of een foutmelding. Koffie aanbieden is vrijwillig; je bericht alleen wordt ook gewaardeerd.',feedbackNotice:'We bereiden een feedbackformulier voor waarvoor geen account nodig is. Je kunt nog geen bericht versturen.',feedbackOpen:'Deel je ideeën'}
+tr:{feedbackTitle:'Birlikte güzelleştirelim',feedbackIntro:'Bir teşekkür, geliştirme önerisi veya hata bildirimi paylaşabilirsin. Kahve ikramı zorunlu değil; mesajın tek başına da değerli.',kindLabel:'Mesaj türü',thanks:'Teşekkür',idea:'Geliştirme önerisi',bug:'Hata bildirimi',messageLabel:'Mesajın',send:'E-posta uygulamasında aç',mailHelp:'Mesajın otomatik gönderilmez veya bu sayfada saklanmaz. E-posta uygulamanda kontrol edip kendin gönderirsin. Uygulama açılmazsa aşağıdaki adrese yazabilirsin. Hata bildiriyorsan telefon modelini ve sorunu tekrar etme adımlarını ekleyebilirsin.'},
+en:{feedbackTitle:'Make it better together',feedbackIntro:'Share a thank-you, an idea or a bug report. A coffee is optional; your message alone is appreciated.',kindLabel:'Message type',thanks:'Thank you',idea:'Feature suggestion',bug:'Bug report',messageLabel:'Your message',send:'Open in email app',mailHelp:'Your message is not sent automatically or stored on this page. Review and send it yourself in your email app. If the app does not open, write to the address below. For bugs, you can include your phone model and steps to reproduce.'},
+nl:{feedbackTitle:'Samen maken we het mooier',feedbackIntro:'Deel een bedankje, een idee of een foutmelding. Koffie aanbieden is vrijwillig; je bericht alleen wordt ook gewaardeerd.',kindLabel:'Soort bericht',thanks:'Bedankje',idea:'Verbeteridee',bug:'Foutmelding',messageLabel:'Je bericht',send:'Open in e-mailapp',mailHelp:'Je bericht wordt niet automatisch verstuurd of op deze pagina opgeslagen. Controleer en verstuur het zelf in je e-mailapp. Opent de app niet, mail dan naar het adres hieronder. Vermeld bij fouten eventueel je telefoonmodel en stappen om het probleem te herhalen.'}
 };
 const selector=document.getElementById('language');
 const requested=new URLSearchParams(location.search).get('lang')||navigator.language.slice(0,2);
@@ -50,12 +55,17 @@ function render(){
  const expired=today>'2026-10-27';
  document.getElementById('pay').hidden=expired;
  document.getElementById('expired').hidden=!expired;
- const formReady=/^https:\/\//.test(feedbackUrl);
- document.getElementById('feedbackOpen').hidden=!formReady;
- document.getElementById('feedbackOpen').href=formReady?feedbackUrl:'';
- document.getElementById('feedbackNotice').hidden=formReady;
+
 }
 selector.addEventListener('change',render);render();
+document.getElementById('feedbackForm').addEventListener('submit',event=>{
+ event.preventDefault();
+ const message=document.getElementById('message').value.trim();
+ if(!message)return;
+ const kind=document.getElementById('kind').value;
+ const subject='Quran App — '+feedbackText[selector.value][kind];
+ location.href='mailto:ztazegul@yahoo.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(message);
+});
 </script>
 </body>
 </html>
