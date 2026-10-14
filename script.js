@@ -6,1002 +6,281 @@ document.addEventListener("DOMContentLoaded", () => {
 ========================================== */
 
 const translations = {
-
-    /* =========================================
-       ENGLISH
-    ========================================== */
-
-    en: {
-
-        /* Page */
-
-        documentTitle:
-            "Zeki Tazegul | IT Professional",
-
-
-        /* Navigation */
-
-        navProfile:
-            "Profile",
-
-        navSkills:
-            "Skills",
-
-        navCompetencies:
-            "Strengths",
-
-        navExperience:
-            "Experience",
-
-        navEducation:
-            "Education",
-
-        navLanguages:
-            "Languages",
-
-        navOther:
-            "Hobbies",
-
-        navContact:
-            "Contact",
-
-
-        /* Hero */
-
-        heroLabel:
-            "IT PROFESSIONAL",
-
-        heroSubtitle:
-            "QA Engineer | IT Support Technician | System Administrator",
-
-        heroDescription:
-            "IT professional with a strong combination of hands-on IT support, system administration, software testing and educational experience. Experienced in troubleshooting, device management, Microsoft 365, Windows environments, networking and modern QA practices.",
-
-        contactButton:
-            "Contact Me",
-
-        experienceButton:
-            "View Experience",
-
-        downloadButton:
-            "Download CV",
-
-
-        /* Hero Cards */
-
-        heroCard1Title:
-            "Desktop Support",
-
-        heroCard1Text:
-            "End-user support, troubleshooting and device management",
-
-        heroCard2Title:
-            "Hardware & Devices",
-
-        heroCard2Text:
-            "Hardware repair, upgrades, preparation and deployment",
-
-        heroCard3Title:
-            "Troubleshooting",
-
-        heroCard3Text:
-            "System, software, network and user support",
-
-        heroCard4Title:
-            "IT & Software",
-
-        heroCard4Text:
-            "QA testing, automation, scripting and technical problem solving",
-
-
-        /* Profile */
-
-        profileTitle:
-            "Profile",
-
-        profileText1:
-            "I am an IT professional with a multidisciplinary background combining IT support, system administration, software testing and education.",
-
-        profileText2:
-            "My practical experience includes desktop and end-user support, Windows environments, hardware and software troubleshooting, Microsoft 365, device preparation, networking and school ICT administration.",
-
-        profileText3:
-            "During my IT traineeship at Motopp, I developed hands-on experience in software testing, API testing, test automation, Playwright, Postman, k6, Git and GitHub Actions.",
-
-        profileText4:
-            "My previous career in education also strengthened my communication, problem-solving, leadership and organisational skills. I am particularly interested in roles where I can combine technical expertise with practical support and continuous learning.",
-
-
-        /* Skills */
-
-        skillsTitle:
-            "Technical Skills",
-
-        skill1Title:
-            "Desktop & End-User Support",
-
-        skill1Item1:
-            "Windows 10/11 installation, configuration and troubleshooting",
-
-        skill1Item2:
-            "Desktop and laptop support",
-
-        skill1Item3:
-            "Hardware and software troubleshooting",
-
-        skill1Item4:
-            "Microsoft 365 and Office support",
-
-        skill1Item5:
-            "User account and login troubleshooting",
-
-        skill1Item6:
-            "Network and connectivity troubleshooting",
-
-        skill1Item7:
-            "Printer and peripheral support",
-
-        skill1Item8:
-            "Device setup and deployment",
-
-        skill1Item9:
-            "Onsite and deskside support",
-
-        skill1Item10:
-            "Clear communication with end users",
-
-
-        skill2Title:
-            "Device Preparation & Migration",
-
-        skill2Item1:
-            "Laptop and desktop preparation",
-
-        skill2Item2:
-            "Windows installation and configuration",
-
-        skill2Item3:
-            "Software and application installation",
-
-        skill2Item4:
-            "User profile and data migration",
-
-        skill2Item5:
-            "Hardware replacement and upgrades",
-
-        skill2Item6:
-            "Device inventory and documentation",
-
-        skill2Item7:
-            "Basic understanding of Intune and Autopilot",
-
-        skill2Item8:
-            "Systematic deployment and troubleshooting",
-
-
-        skill3Title:
-            "IT & Technical Skills",
-
-        skill3Item1:
-            "Windows 10/11",
-
-        skill3Item2:
-            "Hardware repair and upgrades",
-
-        skill3Item3:
-            "Microsoft 365 / Microsoft Office",
-
-        skill3Item4:
-            "Networking and basic system administration",
-
-        skill3Item5:
-            "Python, Java and MySQL",
-
-        skill3Item6:
-            "HTML, CSS and JavaScript",
-
-        skill3Item7:
-            "Playwright, Postman and k6",
-
-        skill3Item8:
-            "Git and GitHub Actions",
-
-        skill3Item9:
-            "API and software testing",
-
-
-        /* Competencies */
-
-        competenciesTitle:
-            "Personal Competencies",
-
-        competenciesText:
-            "Analytical thinking, problem solving, adaptability, responsibility, teamwork, communication, organisation, continuous learning and a strong service-oriented approach. I am comfortable working independently as well as part of a technical or multidisciplinary team.",
-
-
-        /* Experience */
-
-        experienceTitle:
-            "Experience",
-
-        experience1Title:
-            "ICT Administrator",
-
-        experience1Date:
-            "April 2024 – Present",
-
-        experience1Item1:
-            "Provide day-to-day ICT support to teachers, staff and students.",
-
-        experience1Item2:
-            "Troubleshoot Windows devices, applications, accounts and connectivity issues.",
-
-        experience1Item3:
-            "Prepare, configure and maintain laptops, desktops and other ICT equipment.",
-
-        experience1Item4:
-            "Support Microsoft 365 and Office applications.",
-
-        experience1Item5:
-            "Manage and troubleshoot printers, peripherals and classroom technology.",
-
-        experience1Item6:
-            "Assist with user accounts, access and basic system administration tasks.",
-
-        experience1Item7:
-            "Support network connectivity and basic infrastructure troubleshooting.",
-
-        experience1Item8:
-            "Perform hardware upgrades, replacements and preventive maintenance.",
-
-        experience1Item9:
-            "Document technical issues and solutions where required.",
-
-        experience1Item10:
-            "Communicate technical solutions clearly to non-technical users.",
-
-
-        experience2Title:
-            "Software Tester",
-
-        experience2Date:
-            "2026",
-
-        experience2Item1:
-            "Performed functional and API testing of web applications.",
-
-        experience2Item2:
-            "Created automated API tests using Playwright.",
-
-        experience2Item3:
-            "Developed and maintained end-to-end test scenarios.",
-
-        experience2Item4:
-            "Tested authentication, authorisation and RBAC behaviour.",
-
-        experience2Item5:
-            "Performed security and privacy testing including IDOR, XSS and SQL injection checks.",
-
-        experience2Item6:
-            "Created performance tests using k6.",
-
-        experience2Item7:
-            "Integrated automated tests into GitHub Actions CI pipelines.",
-
-        experience2Item8:
-            "Worked with API documentation, Swagger/OpenAPI and test environments.",
-
-        experience2Item9:
-            "Reported defects and collaborated with development teams to improve software quality.",
-
-
-        experience2AdditionalTitle:
-            "Additional Technical Support",
-
-        experience2AdditionalItem1:
-            "Provided practical hardware and technical support during the traineeship.",
-
-        experience2AdditionalItem2:
-            "Assisted with computer setup, configuration and troubleshooting.",
-
-        experience2AdditionalItem3:
-            "Diagnosed hardware and software issues.",
-
-        experience2AdditionalItem4:
-            "Supported users with technical problems.",
-
-        experience2AdditionalItem5:
-            "Applied systematic troubleshooting and problem-solving techniques.",
-
-
-        experience3Title:
-            "Volunteer Python Instructor",
-
-        experience3Date:
-            "April 2023",
-
-        experience3Item1:
-            "Introduced learners to fundamental Python programming concepts.",
-
-        experience3Item2:
-            "Prepared practical exercises and learning activities.",
-
-        experience3Item3:
-            "Supported learners with programming problems and debugging.",
-
-        experience3Item4:
-            "Adapted explanations to different learning levels and backgrounds.",
-
-
-        experience4Title:
-            "ICT Teacher",
-
-        experience4Date:
-            "January 2016 – January 2022",
-
-        experience4Item1:
-            "Taught ICT and computer-related subjects to students.",
-
-        experience4Item2:
-            "Planned and delivered technology-focused lessons.",
-
-        experience4Item3:
-            "Supported students with computer hardware and software.",
-
-        experience4Item4:
-            "Managed classroom technology and digital learning resources.",
-
-        experience4Item5:
-            "Integrated technology into teaching and learning activities.",
-
-        experience4Item6:
-            "Provided technical guidance and troubleshooting support.",
-
-        experience4Item7:
-            "Developed strong communication, organisation and leadership skills.",
-
-
-        /* Education */
-
-        educationTitle:
-            "Education",
-
-        education1Title:
-            "IT Traineeship",
-
-        education1Status:
-            "Completed",
-
-        education2Title:
-            "Associate Degree – Computer Science",
-
-        education3Title:
-            "Master of Arts – Education, Innovation in Learning and Teaching",
-
-        education4Title:
-            "Bachelor's Degree – Primary Education",
-
-
-        /* Courses */
-
-        coursesTitle:
-            "Courses & Certifications",
-
-        course1Item1:
-            "Google IT Support Professional Certificate",
-
-        course2Item1:
-            "Jira",
-
-        course2Item2:
-            "Git & GitHub",
-
-        course2Item3:
-            "Postman",
-
-        course2Item4:
-            "Playwright",
-
-        course3Item1:
-            "Agile principles and practices",
-
-        course3Item2:
-            "Scrum framework",
-
-        course3Item3:
-            "Agile software development",
-
-        course4Item1:
-            "Microsoft Intune",
-
-        course4Item2:
-            "Microsoft 365 E5",
-
-        courseOngoing:
-            "Ongoing",
-
-        coursePlanned:
-            "Planned",
-
-        continuousLearningTitle:
-            "Continuous Learning",
-
-        continuousLearningText:
-            "I continuously develop my technical skills through practical projects, professional training and self-directed learning, with a particular focus on IT support, Microsoft technologies, system administration, software testing and automation.",
-
-
-        /* Languages */
-
-        languagesTitle:
-            "Language Skills",
-
-        languageDutch:
-            "Dutch",
-
-        languageDutchLevel:
-            "B1+",
-
-        languageEnglish:
-            "English",
-
-        languageEnglishLevel:
-            "Fluent",
-
-        languageRussian:
-            "Russian",
-
-        languageRussianLevel:
-            "Fluent",
-
-        languageTurkish:
-            "Turkish",
-
-        languageTurkishLevel:
-            "Native",
-
-
-        /* Hobbies */
-
-        otherTitle:
-            "Hobbies",
-
-        hobby1:
-            "Chess",
-
-        hobby2:
-            "Badminton",
-
-        hobby3:
-            "Woodworking",
-
-        hobby4:
-            "Nature walks and outdoor activities",
-
-        hobby5:
-            "Following technology trends",
-
-        hobby6:
-            "Learning new things and developing skills",
-
-
-        /* Contact */
-
-        contactTitle:
-            "Contact",
-
-        whatsappLabel:
-            "WhatsApp",
-
-        emailLabel:
-            "Email",
-
-        linkedinLabel:
-            "LinkedIn",
-
-
-        /* Footer */
-
-        footerText:
-            "© 2026 Zeki Tazegul. All rights reserved."
+    "en": {
+        "navProfile": "Profile",
+        "navSkills": "Skills",
+        "navCompetencies": "Strengths",
+        "navExperience": "Experience",
+        "navEducation": "Education",
+        "navLanguages": "Languages",
+        "navOther": "Hobbies",
+        "navContact": "Contact",
+        "heroLabel": "IT PROFESSIONAL",
+        "heroSubtitle": "QA Engineer | IT Support Technician | System Administrator",
+        "heroLocation": "06 44955335 - zekitazegul@gmail.com - Poortugaal – Rotterdam",
+        "heroDescription": "IT professional with a broad background in IT support, software testing, system administration and education, combining technical skills with strong communication and problem-solving abilities.",
+        "contactButton": "Contact Me",
+        "downloadCvButton": "Download CV",
+        "heroCard1Title": "IT Support",
+        "heroCard1Text": "Desktop support, hardware and software troubleshooting, Windows and Microsoft 365.",
+        "heroCard2Title": "Quality Assurance",
+        "heroCard2Text": "API and end-to-end testing using Playwright, Postman, GitHub Actions and k6.",
+        "heroCard3Title": "System Administration",
+        "heroCard3Text": "Infrastructure, users, devices, networking and day-to-day IT operations.",
+        "heroCard4Title": "Education & ICT",
+        "heroCard4Text": "Extensive experience in education combined with IT and ICT coordination skills.",
+        "profileTitle": "Profile",
+        "profileParagraph1": "I am an IT professional with a multidisciplinary background combining IT support, software testing, system administration and education.",
+        "profileParagraph2": "My technical background includes Windows environments, hardware and software troubleshooting, Microsoft 365, networking, Python, databases, web technologies and modern QA tools such as Playwright, Postman and k6.",
+        "profileParagraph3": "Through my experience in education and IT, I have developed strong communication, organisation, problem-solving and user-support skills. I enjoy helping people solve technical problems while also improving systems and processes.",
+        "skillsTitle": "Skills",
+        "skillCard1Title": "Desktop & End-User Support",
+        "skill1": "Windows 10 / 11 support",
+        "skill2": "Hardware troubleshooting and repair",
+        "skill3": "Device preparation and migration",
+        "skill4": "User account and profile support",
+        "skill5": "Microsoft 365 support",
+        "skillCard2Title": "IT & Technical Skills",
+        "skill6": "Microsoft Windows environments",
+        "skill7": "Networking and connectivity",
+        "skill8": "Python",
+        "skill9": "Java",
+        "skill10": "MySQL",
+        "skill11": "HTML / CSS / JavaScript",
+        "skillCard3Title": "QA & Development",
+        "skill12": "Playwright",
+        "skill13": "API testing",
+        "skill14": "Postman",
+        "skill15": "k6 performance testing",
+        "skill16": "Git & GitHub Actions",
+        "skill17": "Test automation",
+        "competenciesTitle": "Strengths",
+        "competenciesText": "Problem solving, analytical thinking, clear communication, patience, organisation, teamwork, adaptability, responsibility and a strong customer-focused approach.",
+        "experienceTitle": "Experience",
+        "experience1Title": "ICT Administrator – Wereldwijs Basisschool Rotterdam",
+        "experience1Date": "April 2024 – Present",
+        "experience1Bullet1": "Provide day-to-day ICT support to staff and students.",
+        "experience1Bullet2": "Prepare, configure and maintain computers, laptops and other devices.",
+        "experience1Bullet3": "Troubleshoot hardware, software, network and user-access issues.",
+        "experience1Bullet4": "Support Microsoft 365 and school ICT systems.",
+        "experience1Bullet5": "Coordinate ICT-related activities and help improve digital workflows.",
+        "experience2Title": "Software Tester – Motopp – Amsterdam",
+        "experience2Date": "2026",
+        "experience2Bullet1": "Designed and executed automated API tests using Playwright.",
+        "experience2Bullet2": "Created end-to-end and functional test scenarios for application features.",
+        "experience2Bullet3": "Tested authentication, RBAC, security, privacy and request workflows.",
+        "experience2Bullet4": "Worked with Swagger / OpenAPI, Postman, Git and GitHub Actions.",
+        "experience2Bullet5": "Performed performance testing with k6 and integrated automated tests into CI.",
+        "experience3Title": "Volunteer Python Instructor – AZC Echt",
+        "experience3Date": "April 2023",
+        "experience3Bullet1": "Introduced learners to programming and Python.",
+        "experience3Bullet2": "Prepared practical exercises and learning activities.",
+        "experience3Bullet3": "Supported learners with different technical backgrounds and learning needs.",
+        "experience4Title": "ICT Teacher – Huda Integrated School",
+        "experience4Date": "January 2016 – January 2022",
+        "experience4Bullet1": "Taught ICT and digital skills to students.",
+        "experience4Bullet2": "Managed and supported classroom technology and digital learning environments.",
+        "experience4Bullet3": "Supported teachers and students with technology-related issues.",
+        "experience4Bullet4": "Contributed to the planning and implementation of digital education initiatives.",
+        "additionalExperienceTitle": "Earlier Professional Experience",
+        "additionalExperienceDate": "1996 – 2016",
+        "additionalExperience1": "Extensive experience in education and school management.",
+        "additionalExperience2": "Progressed through roles including Teacher, Head of Department, Deputy Headmaster and School Headmaster.",
+        "additionalExperience3": "Developed strong leadership, organisation, communication and team-management skills.",
+        "educationTitle": "Education",
+        "education1Title": "IT Traineeship",
+        "education1Institution": "Motopp – Amsterdam",
+        "education1Status": "Completed",
+        "education2Title": "Associate Degree – Computer Science",
+        "education2Institution": "University of the People",
+        "education2Location": "California, USA",
+        "education3Title": "Master of Arts in Education, Innovation in Learning and Teaching",
+        "education3Institution": "University of South Wales",
+        "education3Location": "Cardiff, UK",
+        "education4Title": "Bachelor's Degree in Primary Education",
+        "education4Institution": "Canakkale Onsekiz Mart University",
+        "coursesTitle": "Courses & Certifications",
+        "courseCard1Title": "IT Support & Productivity",
+        "course1": "Google IT Support Professional Certificate - Coursera",
+        "course2": "Microsoft 365",
+        "course3": "Jira",
+        "course4": "Agile & Scrum",
+        "courseCard2Title": "Software Testing & Development",
+        "course5": "Playwright",
+        "course6": "Postman",
+        "course7": "Git & GitHub",
+        "course8": "API Testing",
+        "continuousLearningTitle": "Continuous Learning",
+        "continuousLearningText": "Currently developing my knowledge of Microsoft Intune and planning further Microsoft 365 E5 training to strengthen my skills in modern workplace and device management.",
+        "languagesTitle": "Languages",
+        "language1Name": "Dutch",
+        "language1Level": "B1+",
+        "language2Name": "English",
+        "language2Level": "Fluent",
+        "language3Name": "Russian",
+        "language3Level": "Fluent",
+        "language4Name": "Turkish",
+        "language4Level": "Native",
+        "hobbiesTitle": "Hobbies & Interests",
+        "hobby1": "Chess",
+        "hobby2": "Badminton",
+        "hobby3": "Woodworking",
+        "hobby4": "Following technology trends",
+        "hobby5": "Nature walks and outdoor activities",
+        "hobby6": "Learning new things and developing skills",
+        "contactTitle": "Contact",
+        "whatsappLabel": "WhatsApp",
+        "emailLabel": "Email",
+        "linkedinLabel": "LinkedIn",
+        "footerText": "© 2026 Zeki Tazegul. All rights reserved.",
+        "documentTitle": "Zeki Tazegul | IT Professional",
+        "menuOpen": "Open navigation menu",
+        "menuClose": "Close navigation menu",
+        "navigationLabel": "Main navigation",
+        "languageSelection": "Language selection",
+        "switchEnglish": "Switch to English",
+        "switchDutch": "Switch to Dutch",
+        "whatsappAria": "Contact Zeki Tazegul on WhatsApp",
+        "emailAria": "Send an email to Zeki Tazegul",
+        "linkedinAria": "View Zeki Tazegul’s LinkedIn profile"
     },
-
-
-    /* =========================================
-       DUTCH
-    ========================================== */
-
-    nl: {
-
-        /* Page */
-
-        documentTitle:
-            "Zeki Tazegul | IT Professional",
-
-
-        /* Navigation */
-
-        navProfile:
-            "Profiel",
-
-        navSkills:
-            "Vaardigheden",
-
-        navCompetencies:
-            "Sterke punten",
-
-        navExperience:
-            "Werkervaring",
-
-        navEducation:
-            "Opleiding",
-
-        navLanguages:
-            "Talen",
-
-        navOther:
-            "Hobby's",
-
-        navContact:
-            "Contact",
-
-
-        /* Hero */
-
-        heroLabel:
-            "IT PROFESSIONAL",
-
-        heroSubtitle:
-            "QA Engineer | IT Support Technician | Systeembeheerder",
-
-        heroDescription:
-            "IT-professional met een sterke combinatie van praktische IT-support, systeembeheer, softwaretesten en onderwijservaring. Ervaring met probleemoplossing, devicebeheer, Microsoft 365, Windows-omgevingen, netwerken en moderne QA-methoden.",
-
-        contactButton:
-            "Neem contact op",
-
-        experienceButton:
-            "Werkervaring bekijken",
-
-        downloadButton:
-            "CV downloaden",
-
-
-        /* Hero Cards */
-
-        heroCard1Title:
-            "Desktop Support",
-
-        heroCard1Text:
-            "Eindgebruikersondersteuning, probleemoplossing en devicebeheer",
-
-        heroCard2Title:
-            "Hardware & Devices",
-
-        heroCard2Text:
-            "Hardware reparatie, upgrades, voorbereiding en implementatie",
-
-        heroCard3Title:
-            "Probleemoplossing",
-
-        heroCard3Text:
-            "Ondersteuning voor systemen, software, netwerken en gebruikers",
-
-        heroCard4Title:
-            "IT & Software",
-
-        heroCard4Text:
-            "QA-testen, automatisering, scripting en technische probleemoplossing",
-
-
-        /* Profile */
-
-        profileTitle:
-            "Profiel",
-
-        profileText1:
-            "Ik ben een IT-professional met een brede achtergrond waarin IT-support, systeembeheer, softwaretesten en onderwijs samenkomen.",
-
-        profileText2:
-            "Mijn praktische ervaring omvat desktop- en eindgebruikersondersteuning, Windows-omgevingen, hardware- en softwareproblemen, Microsoft 365, devicevoorbereiding, netwerken en ICT-beheer binnen een schoolomgeving.",
-
-        profileText3:
-            "Tijdens mijn IT-traineeship bij Motopp heb ik praktijkervaring opgedaan met softwaretesten, API-testen, testautomatisering, Playwright, Postman, k6, Git en GitHub Actions.",
-
-        profileText4:
-            "Mijn eerdere carrière in het onderwijs heeft daarnaast mijn communicatie-, probleemoplossings-, leiderschaps- en organisatorische vaardigheden versterkt. Ik ben vooral geïnteresseerd in functies waarin ik technische kennis kan combineren met praktische ondersteuning en voortdurend leren.",
-
-
-        /* Skills */
-
-        skillsTitle:
-            "Technische Vaardigheden",
-
-        skill1Title:
-            "Desktop & Eindgebruikersondersteuning",
-
-        skill1Item1:
-            "Windows 10/11 installatie, configuratie en probleemoplossing",
-
-        skill1Item2:
-            "Ondersteuning van desktops en laptops",
-
-        skill1Item3:
-            "Hardware- en softwareproblemen oplossen",
-
-        skill1Item4:
-            "Ondersteuning voor Microsoft 365 en Office",
-
-        skill1Item5:
-            "Problemen met gebruikersaccounts en inloggen oplossen",
-
-        skill1Item6:
-            "Netwerk- en verbindingsproblemen oplossen",
-
-        skill1Item7:
-            "Ondersteuning voor printers en randapparatuur",
-
-        skill1Item8:
-            "Devices instellen en implementeren",
-
-        skill1Item9:
-            "Onsite en deskside support",
-
-        skill1Item10:
-            "Duidelijke communicatie met eindgebruikers",
-
-
-        skill2Title:
-            "Devicevoorbereiding & Migratie",
-
-        skill2Item1:
-            "Voorbereiden van laptops en desktops",
-
-        skill2Item2:
-            "Windows installeren en configureren",
-
-        skill2Item3:
-            "Software en applicaties installeren",
-
-        skill2Item4:
-            "Migratie van gebruikersprofielen en data",
-
-        skill2Item5:
-            "Hardware vervangen en upgraden",
-
-        skill2Item6:
-            "Device-inventarisatie en documentatie",
-
-        skill2Item7:
-            "Basiskennis van Intune en Autopilot",
-
-        skill2Item8:
-            "Systematische implementatie en probleemoplossing",
-
-
-        skill3Title:
-            "IT & Technische Vaardigheden",
-
-        skill3Item1:
-            "Windows 10/11",
-
-        skill3Item2:
-            "Hardware reparatie en upgrades",
-
-        skill3Item3:
-            "Microsoft 365 / Microsoft Office",
-
-        skill3Item4:
-            "Netwerken en basis systeembeheer",
-
-        skill3Item5:
-            "Python, Java en MySQL",
-
-        skill3Item6:
-            "HTML, CSS en JavaScript",
-
-        skill3Item7:
-            "Playwright, Postman en k6",
-
-        skill3Item8:
-            "Git en GitHub Actions",
-
-        skill3Item9:
-            "API- en softwaretesten",
-
-
-        /* Competencies */
-
-        competenciesTitle:
-            "Persoonlijke Competenties",
-
-        competenciesText:
-            "Analytisch denken, probleemoplossend vermogen, aanpassingsvermogen, verantwoordelijkheid, teamwork, communicatie, organisatie, continu leren en een sterke servicegerichte instelling. Ik werk zowel zelfstandig als binnen een technisch of multidisciplinair team.",
-
-
-        /* Experience */
-
-        experienceTitle:
-            "Werkervaring",
-
-        experience1Title:
-            "ICT-beheerder",
-
-        experience1Date:
-            "April 2024 – heden",
-
-        experience1Item1:
-            "Dagelijkse ICT-ondersteuning bieden aan leraren, medewerkers en leerlingen.",
-
-        experience1Item2:
-            "Windows-devices, applicaties, accounts en verbindingsproblemen oplossen.",
-
-        experience1Item3:
-            "Laptops, desktops en andere ICT-apparatuur voorbereiden, configureren en onderhouden.",
-
-        experience1Item4:
-            "Ondersteuning bieden voor Microsoft 365 en Office-applicaties.",
-
-        experience1Item5:
-            "Printers, randapparatuur en technologie in klaslokalen beheren en problemen oplossen.",
-
-        experience1Item6:
-            "Ondersteunen bij gebruikersaccounts, toegangsrechten en basis systeembeheertaken.",
-
-        experience1Item7:
-            "Netwerkverbindingen ondersteunen en basisproblemen met infrastructuur oplossen.",
-
-        experience1Item8:
-            "Hardware-upgrades, vervangingen en preventief onderhoud uitvoeren.",
-
-        experience1Item9:
-            "Technische problemen en oplossingen documenteren wanneer nodig.",
-
-        experience1Item10:
-            "Technische oplossingen duidelijk communiceren aan niet-technische gebruikers.",
-
-
-        experience2Title:
-            "Software Tester",
-
-        experience2Date:
-            "2026",
-
-        experience2Item1:
-            "Functionele en API-tests uitgevoerd voor webapplicaties.",
-
-        experience2Item2:
-            "Geautomatiseerde API-tests ontwikkeld met Playwright.",
-
-        experience2Item3:
-            "End-to-end tests ontwikkeld en onderhouden.",
-
-        experience2Item4:
-            "Authenticatie, autorisatie en RBAC-functionaliteit getest.",
-
-        experience2Item5:
-            "Security- en privacytests uitgevoerd, waaronder controles op IDOR, XSS en SQL-injectie.",
-
-        experience2Item6:
-            "Performance tests ontwikkeld met k6.",
-
-        experience2Item7:
-            "Geautomatiseerde tests geïntegreerd in GitHub Actions CI-pipelines.",
-
-        experience2Item8:
-            "Gewerkt met API-documentatie, Swagger/OpenAPI en testomgevingen.",
-
-        experience2Item9:
-            "Defecten gerapporteerd en samengewerkt met developmentteams om softwarekwaliteit te verbeteren.",
-
-
-        experience2AdditionalTitle:
-            "Aanvullende Technische Ondersteuning",
-
-        experience2AdditionalItem1:
-            "Praktische hardware- en technische ondersteuning geboden tijdens het traineeship.",
-
-        experience2AdditionalItem2:
-            "Geholpen met computerinstallatie, configuratie en probleemoplossing.",
-
-        experience2AdditionalItem3:
-            "Hardware- en softwareproblemen gediagnosticeerd.",
-
-        experience2AdditionalItem4:
-            "Gebruikers ondersteund bij technische problemen.",
-
-        experience2AdditionalItem5:
-            "Systematische probleemoplossing toegepast.",
-
-
-        experience3Title:
-            "Vrijwilliger Python Docent",
-
-        experience3Date:
-            "April 2023",
-
-        experience3Item1:
-            "Cursisten geïntroduceerd in de basisprincipes van Python-programmeren.",
-
-        experience3Item2:
-            "Praktische oefeningen en leeractiviteiten voorbereid.",
-
-        experience3Item3:
-            "Cursisten ondersteund bij programmeerproblemen en debugging.",
-
-        experience3Item4:
-            "Uitleg aangepast aan verschillende niveaus en achtergronden.",
-
-
-        experience4Title:
-            "ICT-docent",
-
-        experience4Date:
-            "Januari 2016 – januari 2022",
-
-        experience4Item1:
-            "ICT- en computergerelateerde vakken gegeven aan leerlingen.",
-
-        experience4Item2:
-            "Technologiegerichte lessen gepland en uitgevoerd.",
-
-        experience4Item3:
-            "Leerlingen ondersteund bij computerhardware en software.",
-
-        experience4Item4:
-            "Klaslokaaltechnologie en digitale leermiddelen beheerd.",
-
-        experience4Item5:
-            "Technologie geïntegreerd in onderwijs- en leeractiviteiten.",
-
-        experience4Item6:
-            "Technische begeleiding en probleemoplossing geboden.",
-
-        experience4Item7:
-            "Sterke communicatie-, organisatie- en leiderschapsvaardigheden ontwikkeld.",
-
-
-        /* Education */
-
-        educationTitle:
-            "Opleiding",
-
-        education1Title:
-            "IT Traineeship",
-
-        education1Status:
-            "Afgerond",
-
-        education2Title:
-            "Associate Degree – Computer Science",
-
-        education3Title:
-            "Master of Arts – Education, Innovation in Learning and Teaching",
-
-        education4Title:
-            "Bachelor's Degree – Primary Education",
-
-
-        /* Courses */
-
-        coursesTitle:
-            "Cursussen & Certificeringen",
-
-        course1Item1:
-            "Google IT Support Professional Certificate",
-
-        course2Item1:
-            "Jira",
-
-        course2Item2:
-            "Git & GitHub",
-
-        course2Item3:
-            "Postman",
-
-        course2Item4:
-            "Playwright",
-
-        course3Item1:
-            "Agile-principes en werkwijzen",
-
-        course3Item2:
-            "Scrum-framework",
-
-        course3Item3:
-            "Agile softwareontwikkeling",
-
-        course4Item1:
-            "Microsoft Intune",
-
-        course4Item2:
-            "Microsoft 365 E5",
-
-        courseOngoing:
-            "Lopend",
-
-        coursePlanned:
-            "Gepland",
-
-        continuousLearningTitle:
-            "Continu Leren",
-
-        continuousLearningText:
-            "Ik ontwikkel mijn technische vaardigheden voortdurend door middel van praktijkprojecten, professionele trainingen en zelfstandig leren, met speciale aandacht voor IT-support, Microsoft-technologieën, systeembeheer, softwaretesten en automatisering.",
-
-
-        /* Languages */
-
-        languagesTitle:
-            "Taalvaardigheden",
-
-        languageDutch:
-            "Nederlands",
-
-        languageDutchLevel:
-            "B1+",
-
-        languageEnglish:
-            "Engels",
-
-        languageEnglishLevel:
-            "Vloeiend",
-
-        languageRussian:
-            "Russisch",
-
-        languageRussianLevel:
-            "Vloeiend",
-
-        languageTurkish:
-            "Turks",
-
-        languageTurkishLevel:
-            "Moedertaal",
-
-
-        /* Hobbies */
-
-        otherTitle:
-            "Hobby's",
-
-        hobby1:
-            "Schaken",
-
-        hobby2:
-            "Badminton",
-
-        hobby3:
-            "Houtbewerking",
-
-        hobby4:
-            "Wandelen in de natuur en buitenactiviteiten",
-
-        hobby5:
-            "Technologische ontwikkelingen volgen",
-
-        hobby6:
-            "Nieuwe dingen leren en vaardigheden ontwikkelen",
-
-
-        /* Contact */
-
-        contactTitle:
-            "Contact",
-
-        whatsappLabel:
-            "WhatsApp",
-
-        emailLabel:
-            "E-mail",
-
-        linkedinLabel:
-            "LinkedIn",
-
-
-        /* Footer */
-
-        footerText:
-            "© 2026 Zeki Tazegul. Alle rechten voorbehouden."
+    "nl": {
+        "navProfile": "Profiel",
+        "navSkills": "Vaardigheden",
+        "navCompetencies": "Sterke punten",
+        "navExperience": "Werkervaring",
+        "navEducation": "Opleiding",
+        "navLanguages": "Talen",
+        "navOther": "Hobby’s",
+        "navContact": "Contact",
+        "heroLabel": "IT-PROFESSIONAL",
+        "heroSubtitle": "QA-engineer | IT-supportmedewerker | Systeembeheerder",
+        "heroLocation": "06 44955335 - zekitazegul@gmail.com - Poortugaal – Rotterdam",
+        "heroDescription": "IT-professional met een brede achtergrond in IT-support, softwaretesten, systeembeheer en onderwijs, die technische vaardigheden combineert met sterke communicatie en probleemoplossend vermogen.",
+        "contactButton": "Neem contact op",
+        "downloadCvButton": "CV downloaden",
+        "heroCard1Title": "IT-ondersteuning",
+        "heroCard1Text": "Desktopondersteuning, oplossen van hardware- en softwareproblemen, Windows en Microsoft 365.",
+        "heroCard2Title": "Kwaliteitsborging",
+        "heroCard2Text": "API- en end-to-endtesten met Playwright, Postman, GitHub Actions en k6.",
+        "heroCard3Title": "Systeembeheer",
+        "heroCard3Text": "Infrastructuur, gebruikers, apparaten, netwerken en dagelijkse IT-werkzaamheden.",
+        "heroCard4Title": "Onderwijs & ICT",
+        "heroCard4Text": "Uitgebreide onderwijservaring gecombineerd met vaardigheden in IT en ICT-coördinatie.",
+        "profileTitle": "Profiel",
+        "profileParagraph1": "Ik ben een IT-professional met een multidisciplinaire achtergrond waarin IT-support, softwaretesten, systeembeheer en onderwijs samenkomen.",
+        "profileParagraph2": "Mijn technische achtergrond omvat Windows-omgevingen, het oplossen van hardware- en softwareproblemen, Microsoft 365, netwerken, Python, databases, webtechnologieën en moderne QA-tools zoals Playwright, Postman en k6.",
+        "profileParagraph3": "Door mijn ervaring in onderwijs en IT heb ik sterke vaardigheden ontwikkeld in communicatie, organisatie, probleemoplossing en gebruikersondersteuning. Ik help graag mensen met technische problemen en verbeter daarbij systemen en processen.",
+        "skillsTitle": "Vaardigheden",
+        "skillCard1Title": "Desktop- & eindgebruikersondersteuning",
+        "skill1": "Ondersteuning voor Windows 10 / 11",
+        "skill2": "Hardwareproblemen oplossen en reparaties uitvoeren",
+        "skill3": "Apparaten voorbereiden en migreren",
+        "skill4": "Ondersteuning voor gebruikersaccounts en profielen",
+        "skill5": "Ondersteuning voor Microsoft 365",
+        "skillCard2Title": "IT & technische vaardigheden",
+        "skill6": "Microsoft Windows-omgevingen",
+        "skill7": "Netwerken en connectiviteit",
+        "skill8": "Python",
+        "skill9": "Java",
+        "skill10": "MySQL",
+        "skill11": "HTML / CSS / JavaScript",
+        "skillCard3Title": "QA & ontwikkeling",
+        "skill12": "Playwright",
+        "skill13": "API-testen",
+        "skill14": "Postman",
+        "skill15": "Prestatietesten met k6",
+        "skill16": "Git & GitHub Actions",
+        "skill17": "Testautomatisering",
+        "competenciesTitle": "Sterke punten",
+        "competenciesText": "Probleemoplossend vermogen, analytisch denken, duidelijke communicatie, geduld, organisatie, samenwerken, aanpassingsvermogen, verantwoordelijkheidsgevoel en een sterk klantgerichte aanpak.",
+        "experienceTitle": "Werkervaring",
+        "experience1Title": "ICT-beheerder – Wereldwijs Basisschool Rotterdam",
+        "experience1Date": "April 2024 – heden",
+        "experience1Bullet1": "Dagelijkse ICT-ondersteuning bieden aan medewerkers en leerlingen.",
+        "experience1Bullet2": "Computers, laptops en andere apparaten voorbereiden, configureren en onderhouden.",
+        "experience1Bullet3": "Problemen met hardware, software, netwerken en gebruikerstoegang oplossen.",
+        "experience1Bullet4": "Microsoft 365 en ICT-systemen van de school ondersteunen.",
+        "experience1Bullet5": "ICT-gerelateerde activiteiten coördineren en digitale werkprocessen helpen verbeteren.",
+        "experience2Title": "Softwaretester – Motopp – Amsterdam",
+        "experience2Date": "2026",
+        "experience2Bullet1": "Geautomatiseerde API-tests ontworpen en uitgevoerd met Playwright.",
+        "experience2Bullet2": "End-to-end- en functionele testscenario’s opgesteld voor applicatiefuncties.",
+        "experience2Bullet3": "Authenticatie, RBAC, beveiliging, privacy en aanvraagprocessen getest.",
+        "experience2Bullet4": "Gewerkt met Swagger / OpenAPI, Postman, Git en GitHub Actions.",
+        "experience2Bullet5": "Prestatietests uitgevoerd met k6 en geautomatiseerde tests geïntegreerd in CI.",
+        "experience3Title": "Vrijwillig Python-docent – AZC Echt",
+        "experience3Date": "April 2023",
+        "experience3Bullet1": "Deelnemers laten kennismaken met programmeren en Python.",
+        "experience3Bullet2": "Praktische oefeningen en leeractiviteiten voorbereid.",
+        "experience3Bullet3": "Deelnemers met verschillende technische achtergronden en leerbehoeften ondersteund.",
+        "experience4Title": "ICT-docent – Huda Integrated School",
+        "experience4Date": "Januari 2016 – januari 2022",
+        "experience4Bullet1": "ICT en digitale vaardigheden onderwezen aan leerlingen.",
+        "experience4Bullet2": "Technologie in de klas en digitale leeromgevingen beheerd en ondersteund.",
+        "experience4Bullet3": "Docenten en leerlingen ondersteund bij technische problemen.",
+        "experience4Bullet4": "Bijgedragen aan de planning en uitvoering van initiatieven voor digitaal onderwijs.",
+        "additionalExperienceTitle": "Eerdere werkervaring",
+        "additionalExperienceDate": "1996 – 2016",
+        "additionalExperience1": "Uitgebreide ervaring in onderwijs en schoolmanagement.",
+        "additionalExperience2": "Doorgegroeid in functies als docent, afdelingshoofd, adjunct-directeur en schooldirecteur.",
+        "additionalExperience3": "Sterke vaardigheden ontwikkeld in leiderschap, organisatie, communicatie en teammanagement.",
+        "educationTitle": "Opleiding",
+        "education1Title": "IT-traineeship",
+        "education1Institution": "Motopp – Amsterdam",
+        "education1Status": "Afgerond",
+        "education2Title": "Associate degree – Informatica",
+        "education2Institution": "University of the People",
+        "education2Location": "Californië, Verenigde Staten",
+        "education3Title": "Master of Arts in Onderwijs, Innovatie in Leren en Lesgeven",
+        "education3Institution": "University of South Wales",
+        "education3Location": "Cardiff, Verenigd Koninkrijk",
+        "education4Title": "Bachelor in het basisonderwijs",
+        "education4Institution": "Canakkale Onsekiz Mart University",
+        "coursesTitle": "Cursussen & certificeringen",
+        "courseCard1Title": "IT-ondersteuning & productiviteit",
+        "course1": "Google IT Support Professional Certificate - Coursera",
+        "course2": "Microsoft 365",
+        "course3": "Jira",
+        "course4": "Agile & Scrum",
+        "courseCard2Title": "Softwaretesten & ontwikkeling",
+        "course5": "Playwright",
+        "course6": "Postman",
+        "course7": "Git & GitHub",
+        "course8": "API-testen",
+        "continuousLearningTitle": "Voortdurend leren",
+        "continuousLearningText": "Ik verdiep mij momenteel in Microsoft Intune en plan aanvullende Microsoft 365 E5-training om mijn vaardigheden in moderne werkplekken en apparaatbeheer te versterken.",
+        "languagesTitle": "Talen",
+        "language1Name": "Nederlands",
+        "language1Level": "B1+",
+        "language2Name": "Engels",
+        "language2Level": "Vloeiend",
+        "language3Name": "Russisch",
+        "language3Level": "Vloeiend",
+        "language4Name": "Turks",
+        "language4Level": "Moedertaal",
+        "hobbiesTitle": "Hobby’s & interesses",
+        "hobby1": "Schaken",
+        "hobby2": "Badminton",
+        "hobby3": "Houtbewerking",
+        "hobby4": "Technologische ontwikkelingen volgen",
+        "hobby5": "Wandelen in de natuur en buitenactiviteiten",
+        "hobby6": "Nieuwe dingen leren en vaardigheden ontwikkelen",
+        "contactTitle": "Contact",
+        "whatsappLabel": "WhatsApp",
+        "emailLabel": "E-mail",
+        "linkedinLabel": "LinkedIn",
+        "footerText": "© 2026 Zeki Tazegul. Alle rechten voorbehouden.",
+        "documentTitle": "Zeki Tazegul | IT-professional",
+        "menuOpen": "Navigatiemenu openen",
+        "menuClose": "Navigatiemenu sluiten",
+        "navigationLabel": "Hoofdnavigatie",
+        "languageSelection": "Taalkeuze",
+        "switchEnglish": "Overschakelen naar Engels",
+        "switchDutch": "Overschakelen naar Nederlands",
+        "whatsappAria": "Neem contact op met Zeki Tazegul via WhatsApp",
+        "emailAria": "Stuur een e-mail naar Zeki Tazegul",
+        "linkedinAria": "Bekijk het LinkedIn-profiel van Zeki Tazegul"
     }
 };
 
@@ -1044,7 +323,7 @@ function closeMobileMenu() {
 
     mobileMenuToggle.setAttribute(
         "aria-label",
-        "Open navigation menu"
+        translations[document.documentElement.lang].menuOpen
     );
 }
 
@@ -1073,8 +352,8 @@ function toggleMobileMenu() {
     mobileMenuToggle.setAttribute(
         "aria-label",
         isOpen
-            ? "Close navigation menu"
-            : "Open navigation menu"
+            ? translations[document.documentElement.lang].menuClose
+            : translations[document.documentElement.lang].menuOpen
     );
 }
 
@@ -1176,6 +455,16 @@ function setLanguage(language) {
         }
     );
 
+
+    document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
+        element.setAttribute("aria-label", currentTranslations[element.getAttribute("data-i18n-aria")]);
+    });
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.setAttribute("aria-label", currentTranslations[
+            mobileMenuToggle.getAttribute("aria-expanded") === "true" ? "menuClose" : "menuOpen"
+        ]);
+    }
 
     /* Update page title */
 
